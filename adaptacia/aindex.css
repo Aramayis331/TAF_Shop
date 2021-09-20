@@ -1,0 +1,327 @@
+@media only screen and (max-width: 1177px) {
+	.row_8div2_text {
+		font-weight: 700;
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 1006px) {
+	.row_4div1 p {
+		font-size: 21px;
+	}
+	.row8div1_div {
+		margin: 0px 30px;
+	}
+	.otzivi_name {
+		font-size: 16px;
+	}
+	.ocenki i {
+		font-size: 15px;
+	}
+	.row8div1_div p {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 991px) {
+
+}
+@media only screen and (max-width: 982px) {
+	.text_more {
+		display: none;
+	}
+	.btn_podrobnoe {
+		display: block;
+		color: #000000;
+	}
+	.row_8div1 {
+		align-items: flex-start;
+		flex-direction: column;
+		margin-bottom: 15px;
+	}
+	.otzivi_ocenka {
+		font-weight: 500;
+	}
+	.ocenki i {
+		font-size: 16px;
+	}
+	.row8div1_div p {
+		font-size: 15px;
+	}
+	.otzivi_ocenka {
+		margin: 0;
+	}
+	.row8div1_div {
+		margin: 0;
+	}
+}
+@media only screen and (max-width: 954px) {
+	.row_8div2 {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+@media only screen and (max-width: 954px) {
+	.row_13div_regurovka1 {
+		margin: 0px 30px 0px 0px;
+	}
+	.slider {
+		width: 95%;
+		height: 350px;
+	}
+	.slides {
+		height: 350px;
+	}
+	.slide img {
+		height: 350px;
+	}
+	.navigation_manual {
+		margin-top: 315px;
+		width: 95%;
+	}
+	.navigation_auto {
+		margin-top: 315px;
+		width: 95%;
+	}
+}
+@media only screen and (max-width: 915px) { 
+	.header_input input::placeholder {
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 900px) { 
+	.onas_more {
+		display: none;
+	}
+	.div_btn_onas {
+		display: inline-block;
+	}
+	.onas_btn {
+		background-color: #528FD5;
+		color: #FFFFFF;
+		border-radius: 5px;
+		padding: 1px 10px;
+	}
+}
+@media only screen and (max-width: 872px) { 
+	.row_13div_regurovka1 {
+		margin: 0px;
+	}
+	.row_13div_regurovka3 {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin: 0px 0px 0px 30px;
+	}
+	
+}
+@media only screen and (max-width: 862px) {
+	.row_8divbutton button {
+		font-size: 15px;
+	}
+	.ocenki i {
+		font-size: 15px;
+	}
+	.row8div1_div p {
+		font-size: 14px;
+	}
+	.otzivi_ocenka {
+		font-weight: 400;
+		font-size: 75px;
+	}
+	.row_8div1 {
+		margin-bottom: 37px;
+	}
+	.row_12div2_p {
+		font-weight: 600;
+		font-size: 15px;
+	}
+	.text1_p2 {
+		font-size: 14px;
+	}
+	.text1_p1 {
+		font-size: 18px;
+	}
+	.row_4div1 p {
+		font-size: 19px;
+	}
+	.row_8divbutton button {
+		margin: 0px 20px;
+	}
+	.row_10div_btn {
+		margin: 0px 20px;
+	}
+	.row_13div1_p p {
+		margin-left: 10px;
+	}
+	.header_input {
+		width: 25%;
+	}
+	.header_input input::placeholder {
+		font-size: 14px;
+	}
+	.header_input  input {
+		padding: 3px;
+	}
+}
+@media only screen and (max-width: 776px) {
+	.row1_div {
+		padding: 30px 0px;
+	}
+	.row_1div1 {
+		padding: 5px 25px;
+	}
+	.row_1div1 p {
+		font-weight: 500;
+		font-size: 16px;
+	}
+	.row_1div2 {
+		font-size: 16px;
+		padding: 5px 25px;
+	}
+	.row_1div3 {
+		padding: 3px 25px;
+	}
+	.row_1div3 i {
+		font-size: 26px;
+	}
+	.like_count_div {
+		width: 15px;
+		height: 15px;
+		font-size: 12px;
+		right: 22px;
+		top: 0px;
+	}
+	.row1div2_div1 {
+		padding: 16px 70px;
+	}
+	.row1div2_div2 {
+		border: 2px solid #FFFFFF;
+		right: 27px;
+		width: 80px;
+		height: 80px;
+	}
+	.row1div2_div2 i {
+		font-size: 32px;
+	}
+	.basket_count_div {
+		width: 15px;
+		height: 15px;
+		font-size: 12px;
+		right: 11px;
+		bottom: 12px;
+	}
+	.slider {
+		width: 95%;
+		height: 350px;
+	}
+	.slides {
+		height: 350px;
+	}
+	.slide img {
+		height: 350px;
+	}
+	.navigation_manual {
+		margin-top: 315px;
+		width: 95%;
+	}
+	.navigation_auto {
+		margin-top: 315px;
+		width: 95%;
+	}
+	.row_3div1 {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.row_3div1 p {
+		font-size: 30px;
+		margin: 0;
+	}
+	.row_5div1 p {
+		font-size: 30px;
+	}
+	.row_6div1 p {
+		font-size: 30px;
+	}
+	.row_7div1 p {
+		font-size: 30px;
+	}
+	.row_7div1 {
+		margin: 10px 0px 10px 0px;
+	}
+	.otzivi_ocenka {
+		font-size: 70px;
+	}
+	.row_8div2_text {
+		font-size: 13px;
+	}
+	.otzivi_name {
+		font-size: 15px;
+	}
+	.otzivi_data {
+		font-size: 15px;
+	}
+	.ocenki i {
+		font-size: 14px;
+	}
+	.name_recepti {
+		font-size: 30px;
+	}
+	.btn_recepti {
+		padding: 3px 20px;
+		margin: 0px 0px;
+	}
+	.avtorskie_recepti {
+		font-size: 11px;
+	}
+	.burger_recept {
+		font-size: 17px;
+	}
+	.row_10div_btn {
+		bottom: 20px;
+		padding: 3px 20px;
+		margin: 0px;
+	}
+	.row_9 {
+		margin-bottom: 10px;
+	}
+	.row_11div1 {
+		margin: 10px 0px 10px 0px;
+	}
+	.row_11div1 p {
+		font-size: 30px;
+	}
+	.row_8 {
+		margin-bottom: 10px;
+	}
+	.text1_p2 {
+		font-size: 13px;
+	}
+	.text1_p1 {
+		font-size: 16px;
+	}
+	.text1_div1, .text1_div2, .text2_div1, .text2_div2 {
+		padding: 0px;
+		width: 46%;
+		height: 90px;
+	}
+	.row_13 {
+		padding: 50px 0px;
+	}
+	.row13_div2_header, .row13_div1_header, .row13_div3_header {
+		font-size: 15px;
+	}
+	.row_13div1_p p {
+		font-size: 15px;
+	}
+	.row13_div2_p_den {
+		font-size: 15px;
+	}
+	.row13_div2_p_chasi {
+		font-size: 15px;
+	}
+	.row13_div3_p p {
+		font-size: 15px;
+	}
+	.row13_div3_iconi i {
+		font-size: 21px;
+	}
+}

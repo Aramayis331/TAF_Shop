@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SHOP</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="adaptacia/aindex.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+<div class="container-fluid">
+	<nav class="navbar header">
+			<div class="header_logo">
+				<img src="images/header_logo.webp" alt="no photo">
+			</div>
+			<div class="header_input">
+				<input type="text" placeholder="Поиск товара по каталогу">
+			</div>
+		<button class="navbar-toggler div_icon_navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+			<div class="icon_navbar"><i class="fas fa-bars"></i></div>
+		</button>
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<div class="icon_user">
+					<i class="fas fa-user"></i>
+					<a href="#">Личный кабинет</a>
+				</div>
+			<div class="btn_close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+				<i class="fas fa-times"></i>
+			</div>
+			</div>
+			<div class="offcanvas-body">
+			<ul class="navbar-nav navbar_nav justify-content-end flex-grow-1 pe-3">
+				<li class="nav-item">
+					<div class="li1">
+						<img src="images/menu_img1.webp" alt="no photo">
+						<a class="li1_a" href="#">Главная</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li2">
+						<img src="images/menu_img2.webp" alt="no photo">
+						<a class="li2_a" href="#">Акции</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown dropdown_li">
+						<img src="images/menu_img3.webp" alt="no photo">
+						<a class="fish_dropdown dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Каталог товаров
+						</a>
+					<ul class="dropdown-menu dropdown_menu" aria-labelledby="offcanvasNavbarDropdown">
+						<li><a class="dropdown_item" href="#">Слабосоленая риба и морепродукты</a></li>
+						<li><a class="dropdown_item" href="#">Рыба холодного копчения</a></li>
+						<li><a class="dropdown_item" href="#">Рыба горячего копчения</a></li>
+						<li><a class="dropdown_item" href="#">Вяленная рыба</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<div class="li3">
+						<img src="images/menu_img4.webp" alt="no photo">
+						<a class="li3_a" href="#">Доставка и оплата</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li4">
+						<img src="images/menu_img5.webp" alt="no photo">
+						<a class="li4_a" href="#">Отзывы</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li5">
+						<img src="images/menu_img6.webp" alt="no photo">
+						<a class="li5_a" href="#">Частые вопросы?</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li6">
+						<img src="images/menu_img7.webp" alt="no photo">
+						<a class="li6_a" href="#">График работы</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li7">
+						<img src="images/menu_img8.webp" alt="no photo">
+						<a class="li7_a" href="#">Контакты</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li8">
+						<img src="images/menu_img9.webp" alt="no photo">
+						<a class="li8_a" href="#">О нас</a>
+					</div>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<!-- row_1 -->
+	<div class="row row_1">
+		<div class="col-6">
+			<div class="row1_div">
+				<div class="row_1div1">
+					<i class="fas fa-border-all"></i>
+					<p>Меню</p>
+				</div>
+				<div class="row1_connectiondiv2i3">
+					<div class="row_1div2">
+						<i class="fas fa-phone-alt"></i>
+						<p>Контакты</p>
+					</div>
+					<div class="row_1div3">
+						<i class="far fa-heart"></i>
+						<div class="like_count_div"><p id="number_like">0</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="row1_div2">
+				<div class="row1div2_div1"></div>
+					<div class="row1div2_div2">
+						<i class="fas fa-shopping-basket"></i>
+						<div class="basket_count_div">
+							<p id="number_basket">0</p>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- row_2 -->
+	<div class="row row_2">
+		<div class="col-12">
+			<div class="slider">
+				<div class="slides">
+					<!--radio buttons start-->
+					<input type="radio" name="radio_btn" id="radio1">
+					<input type="radio" name="radio_btn" id="radio2">
+					<input type="radio" name="radio_btn" id="radio3">
+					<input type="radio" name="radio_btn" id="radio4">
+					<!--radio buttons end-->
+					<!--slide images start-->
+					<div class="slide first">
+						<img src="images/slider_img1.webp" alt="no photo">
+					</div>
+					<div class="slide">
+						<img src="images/slider_img2.webp" alt="no photo">
+					</div>
+					<div class="slide">
+						<img src="images/slider_img3.webp" alt="no photo">
+					</div>
+					<div class="slide">
+						<img src="images/slider_img4.webp" alt="no photo">
+					</div>
+					<!--slide images end-->
+					<!--automatic navigation start-->
+					<div class="navigation_auto">
+						<div class="auto_btn1"></div>
+						<div class="auto_btn2"></div>
+						<div class="auto_btn3"></div>
+						<div class="auto_btn4"></div>
+					</div>
+					<!--automatic navigation end-->
+					<!--manual navigation start-->
+					<div class="navigation_manual">
+						<label for="radio1" class="manual_btn"></label>
+						<label for="radio2" class="manual_btn"></label>
+						<label for="radio3" class="manual_btn"></label>
+						<label for="radio4" class="manual_btn"></label>
+					</div>
+					<!--manual navigation end-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- row_3 -->
+	<div class="row row_3">
+		<div class="col-12">
+			<div class="row_3div1">
+				<p>Категории</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- row_4 -->
+	<div class="row row_4">
+		<div class="col-3">
+			<div class="row_4div1">
+				<img src="images/kategoria_1.webp" alt="no photo">
+				<p>Слабосолёная рыба и морепродукти</p>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="row_4div1">
+				<img src="images/kategoria_2.webp" alt="no photo">
+				<p>Рыба холодного копчения</p>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="row_4div1">
+				<img src="images/kategoria_3.webp" alt="no photo">
+				<p>Рыба горячего копчения</p>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="row_4div1">
+				<img src="images/kategoria_4.webp" alt="no photo">
+				<p>Вяленная рыба</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- row_5 -->
+	<div class="row row_5">
+		<div class="col-12">
+			<div class="row_5div1">
+				<p>Акции</p>
+				<div class="arrows_slider_akcia">
+					<i class="fas fa-chevron-left arrow_left" id="arrow_left_akcia"></i>
+					<i class="fas fa-chevron-right arrow_right" id="arrow_right_akcia"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- slider_akcia -->
+	<div class="row">
+	<div class="col-12">
+	<div class="slider_akcia">
+		<div class="slide_akcia">
+			<div class="header_slider_akcia">
+				<div class="cena_procent">
+					<p class="grn">-53 грн</p>
+					<p class="procent">-20%</p> 
+				</div>
+					<i class="fas fa-heart"></i>
+			</div>
+			<div class="articl_slider_akcia">
+				<img src="images/slider_akcia1.webp" alt="no photo">
+				<p class="articl_p1">Есть в наличии</p>
+				<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+			</div>
+			<div class="ocenka_slider_akcia"> 
+				<div class="ocenki">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="comment_slider_akcia">
+					<i class="far fa-comment-dots"></i>
+					<p>0</p>
+				</div>
+			</div>
+			<div class="footer_slider_akcia">
+				<div class="cena_producta_div">
+					<p class="cena_product">243 UAH</p>
+					<p class="skidka_product">189.9 UAH</p>
+				</div>
+				<button type="submit">Купить</button>
+			</div>
+		</div>
+		<div class="slide_akcia">
+			<div class="header_slider_akcia">
+				<div class="cena_procent">
+					<p class="grn">-53 грн</p>
+					<p class="procent">-20%</p>
+				</div>
+					<i class="fas fa-heart"></i>
+			</div>
+			<div class="articl_slider_akcia">
+				<img src="images/slider_akcia2.webp" alt="no photo">
+				<p class="articl_p1">Есть в наличии</p>
+				<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+			</div>
+			<div class="ocenka_slider_akcia"> 
+				<div class="ocenki">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="comment_slider_akcia">
+					<i class="far fa-comment-dots"></i>
+					<p>0</p>
+				</div>
+			</div>
+			<div class="footer_slider_akcia">
+				<div class="cena_producta_div">
+					<p class="cena_product">243 UAH</p>
+					<p class="skidka_product">189.9 UAH</p>
+				</div>
+				<button type="submit">Купить</button>
+			</div>
+		</div>
+		<div class="slide_akcia">
+			<div class="header_slider_akcia">
+				<div class="cena_procent">
+					<p class="grn">-53 грн</p>
+					<p class="procent">-20%</p>
+				</div>
+					<i class="fas fa-heart"></i>
+			</div>
+			<div class="articl_slider_akcia">
+				<img src="images/slider_akcia3.webp" alt="no photo">
+				<p class="articl_p1">Есть в наличии</p>
+				<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+			</div>
+			<div class="ocenka_slider_akcia"> 
+				<div class="ocenki">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="comment_slider_akcia">
+					<i class="far fa-comment-dots"></i>
+					<p>0</p>
+				</div>
+			</div>
+			<div class="footer_slider_akcia">
+				<div class="cena_producta_div">
+					<p class="cena_product">243 UAH</p>
+					<p class="skidka_product">189.9 UAH</p>
+				</div>
+				<button type="submit">Купить</button>
+			</div>
+		</div>
+		<div class="slide_akcia">
+			<div class="header_slider_akcia">
+				<div class="cena_procent">
+					<p class="grn">-53 грн</p>
+					<p class="procent">-20%</p>
+				</div>
+					<i class="fas fa-heart"></i>
+			</div>
+			<div class="articl_slider_akcia">
+				<img src="images/slider_akcia4.webp" alt="no photo">
+				<p class="articl_p1">Есть в наличии</p>
+				<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+			</div>
+			<div class="ocenka_slider_akcia"> 
+				<div class="ocenki">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="comment_slider_akcia">
+					<i class="far fa-comment-dots"></i>
+					<p>0</p>
+				</div>
+			</div>
+			<div class="footer_slider_akcia">
+				<div class="cena_producta_div">
+					<p class="cena_product">243 UAH</p>
+					<p class="skidka_product">189.9 UAH</p>
+				</div>
+				<button type="submit">Купить</button>
+			</div>
+		</div>
+		<div class="slide_akcia">
+			<div class="header_slider_akcia">
+				<div class="cena_procent">
+					<p class="grn">-53 грн</p>
+					<p class="procent">-20%</p>
+				</div>
+					<i class="fas fa-heart"></i>
+			</div>
+			<div class="articl_slider_akcia">
+				<img src="images/slider_akcia1.webp" alt="no photo">
+				<p class="articl_p1">Есть в наличии</p>
+				<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+			</div>
+			<div class="ocenka_slider_akcia"> 
+				<div class="ocenki">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="comment_slider_akcia">
+					<i class="far fa-comment-dots"></i>
+					<p>0</p>
+				</div>
+			</div>
+			<div class="footer_slider_akcia">
+				<div class="cena_producta_div">
+					<p class="cena_product">243 UAH</p>
+					<p class="skidka_product">189.9 UAH</p>
+				</div>
+				<button type="submit">Купить</button>
+			</div>
+		</div>
+		<div class="slide_akcia">
+			<div class="header_slider_akcia">
+				<div class="cena_procent">
+					<p class="grn">-53 грн</p>
+					<p class="procent">-20%</p>
+				</div>
+					<i class="fas fa-heart"></i>
+			</div>
+			<div class="articl_slider_akcia">
+				<img src="images/slider_akcia3.webp" alt="no photo">
+				<p class="articl_p1">Есть в наличии</p>
+				<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+			</div>
+			<div class="ocenka_slider_akcia"> 
+				<div class="ocenki">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="comment_slider_akcia">
+					<i class="far fa-comment-dots"></i>
+					<p>0</p>
+				</div>
+			</div>
+			<div class="footer_slider_akcia">
+				<div class="cena_producta_div">
+					<p class="cena_product">243 UAH</p>
+					<p class="skidka_product">189.9 UAH</p>
+				</div>
+				<button type="submit">Купить</button>
+			</div>
+		</div>
+		<div class="slide_akcia">
+			<div class="header_slider_akcia">
+				<div class="cena_procent">
+					<p class="grn">-53 грн</p>
+					<p class="procent">-20%</p>
+				</div>
+					<i class="fas fa-heart"></i>
+			</div>
+			<div class="articl_slider_akcia">
+				<img src="images/slider_akcia4.webp" alt="no photo">
+				<p class="articl_p1">Есть в наличии</p>
+				<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+			</div>
+			<div class="ocenka_slider_akcia"> 
+				<div class="ocenki">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="comment_slider_akcia">
+					<i class="far fa-comment-dots"></i>
+					<p>0</p>
+				</div>
+			</div>
+			<div class="footer_slider_akcia">
+				<div class="cena_producta_div">
+					<p class="cena_product">243 UAH</p>
+					<p class="skidka_product">189.9 UAH</p>
+				</div>
+				<button type="submit">Купить</button>
+			</div>
+		</div>
+		<div class="slide_akcia">
+			<div class="header_slider_akcia">
+				<div class="cena_procent">
+					<p class="grn">-53 грн</p>
+					<p class="procent">-20%</p>
+				</div>
+					<i class="fas fa-heart"></i>
+			</div>
+			<div class="articl_slider_akcia">
+				<img src="images/slider_akcia1.webp" alt="no photo">
+				<p class="articl_p1">Есть в наличии</p>
+				<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+			</div>
+			<div class="ocenka_slider_akcia"> 
+				<div class="ocenki">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="comment_slider_akcia">
+					<i class="far fa-comment-dots"></i>
+					<p>0</p>
+				</div>
+			</div>
+			<div class="footer_slider_akcia">
+				<div class="cena_producta_div">
+					<p class="cena_product">243 UAH</p>
+					<p class="skidka_product">189.9 UAH</p>
+				</div>
+				<button type="submit">Купить</button>
+			</div>
+		</div>
+		<div class="slide_akcia">
+			<div class="header_slider_akcia">
+				<div class="cena_procent">
+					<p class="grn">-53 грн</p>
+					<p class="procent">-20%</p>
+				</div>
+					<i class="fas fa-heart"></i>
+			</div>
+			<div class="articl_slider_akcia">
+				<img src="images/slider_akcia2.webp" alt="no photo">
+				<p class="articl_p1">Есть в наличии</p>
+				<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+			</div>
+			<div class="ocenka_slider_akcia"> 
+				<div class="ocenki">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="comment_slider_akcia">
+					<i class="far fa-comment-dots"></i>
+					<p>0</p>
+				</div>
+			</div>
+			<div class="footer_slider_akcia">
+				<div class="cena_producta_div">
+					<p class="cena_product">243 UAH</p>
+					<p class="skidka_product">189.9 UAH</p>
+				</div>
+				<button type="submit">Купить</button>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+
+
+	<!-- row_6 -->
+	<div class="row row_6">
+		<div class="col-12">
+			<div class="row_6div1">
+				<p>Часто покупают</p>
+				<div class="arrows_slider_akcia">
+					<i class="fas fa-chevron-left arrow_left" id="arrow_left_buy"></i>
+					<i class="fas fa-chevron-right arrow_right" id="arrow_right_buy"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+		<!-- slider_Often_buy -->
+		<div class="row">
+			<div class="col-12">
+			<div class="slider_buy">
+				<div class="slide_buy">
+					<div class="header_slider_akcia">
+						<div class="cena_procent">
+							<p class="grn">-53 грн</p>
+							<p class="procent">-20%</p> 
+						</div>
+							<i class="fas fa-heart"></i>
+					</div>
+					<div class="articl_slider_akcia">
+						<img src="images/slider_akcia1.webp" alt="no photo">
+						<p class="articl_p1">Есть в наличии</p>
+						<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+					</div>
+					<div class="ocenka_slider_akcia"> 
+						<div class="ocenki">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="comment_slider_akcia">
+							<i class="far fa-comment-dots"></i>
+							<p>0</p>
+						</div>
+					</div>
+					<div class="footer_slider_akcia">
+						<div class="cena_producta_div">
+							<p class="cena_product">243 UAH</p>
+							<p class="skidka_product">189.9 UAH</p>
+						</div>
+						<button type="submit">Купить</button>
+					</div>
+				</div>
+				<div class="slide_buy">
+					<div class="header_slider_akcia">
+						<div class="cena_procent">
+							<p class="grn">-53 грн</p>
+							<p class="procent">-20%</p>
+						</div>
+							<i class="fas fa-heart"></i>
+					</div>
+					<div class="articl_slider_akcia">
+						<img src="images/slider_akcia2.webp" alt="no photo">
+						<p class="articl_p1">Есть в наличии</p>
+						<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+					</div>
+					<div class="ocenka_slider_akcia"> 
+						<div class="ocenki">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="comment_slider_akcia">
+							<i class="far fa-comment-dots"></i>
+							<p>0</p>
+						</div>
+					</div>
+					<div class="footer_slider_akcia">
+						<div class="cena_producta_div">
+							<p class="cena_product">243 UAH</p>
+							<p class="skidka_product">189.9 UAH</p>
+						</div>
+						<button type="submit">Купить</button>
+					</div>
+				</div>
+				<div class="slide_buy">
+					<div class="header_slider_akcia">
+						<div class="cena_procent">
+							<p class="grn">-53 грн</p>
+							<p class="procent">-20%</p>
+						</div>
+							<i class="fas fa-heart"></i>
+					</div>
+					<div class="articl_slider_akcia">
+						<img src="images/slider_akcia3.webp" alt="no photo">
+						<p class="articl_p1">Есть в наличии</p>
+						<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+					</div>
+					<div class="ocenka_slider_akcia"> 
+						<div class="ocenki">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="comment_slider_akcia">
+							<i class="far fa-comment-dots"></i>
+							<p>0</p>
+						</div>
+					</div>
+					<div class="footer_slider_akcia">
+						<div class="cena_producta_div">
+							<p class="cena_product">243 UAH</p>
+							<p class="skidka_product">189.9 UAH</p>
+						</div>
+						<button type="submit">Купить</button>
+					</div>
+				</div>
+				<div class="slide_buy">
+					<div class="header_slider_akcia">
+						<div class="cena_procent">
+							<p class="grn">-53 грн</p>
+							<p class="procent">-20%</p>
+						</div>
+							<i class="fas fa-heart"></i>
+					</div>
+					<div class="articl_slider_akcia">
+						<img src="images/slider_akcia4.webp" alt="no photo">
+						<p class="articl_p1">Есть в наличии</p>
+						<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+					</div>
+					<div class="ocenka_slider_akcia"> 
+						<div class="ocenki">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="comment_slider_akcia">
+							<i class="far fa-comment-dots"></i>
+							<p>0</p>
+						</div>
+					</div>
+					<div class="footer_slider_akcia">
+						<div class="cena_producta_div">
+							<p class="cena_product">243 UAH</p>
+							<p class="skidka_product">189.9 UAH</p>
+						</div>
+						<button type="submit">Купить</button>
+					</div>
+				</div>
+				<div class="slide_buy">
+					<div class="header_slider_akcia">
+						<div class="cena_procent">
+							<p class="grn">-53 грн</p>
+							<p class="procent">-20%</p>
+						</div>
+							<i class="fas fa-heart"></i>
+					</div>
+					<div class="articl_slider_akcia">
+						<img src="images/slider_akcia1.webp" alt="no photo">
+						<p class="articl_p1">Есть в наличии</p>
+						<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+					</div>
+					<div class="ocenka_slider_akcia"> 
+						<div class="ocenki">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="comment_slider_akcia">
+							<i class="far fa-comment-dots"></i>
+							<p>0</p>
+						</div>
+					</div>
+					<div class="footer_slider_akcia">
+						<div class="cena_producta_div">
+							<p class="cena_product">243 UAH</p>
+							<p class="skidka_product">189.9 UAH</p>
+						</div>
+						<button type="submit">Купить</button>
+					</div>
+				</div>
+				<div class="slide_buy">
+					<div class="header_slider_akcia">
+						<div class="cena_procent">
+							<p class="grn">-53 грн</p>
+							<p class="procent">-20%</p>
+						</div>
+							<i class="fas fa-heart"></i>
+					</div>
+					<div class="articl_slider_akcia">
+						<img src="images/slider_akcia3.webp" alt="no photo">
+						<p class="articl_p1">Есть в наличии</p>
+						<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+					</div>
+					<div class="ocenka_slider_akcia"> 
+						<div class="ocenki">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="comment_slider_akcia">
+							<i class="far fa-comment-dots"></i>
+							<p>0</p>
+						</div>
+					</div>
+					<div class="footer_slider_akcia">
+						<div class="cena_producta_div">
+							<p class="cena_product">243 UAH</p>
+							<p class="skidka_product">189.9 UAH</p>
+						</div>
+						<button type="submit">Купить</button>
+					</div>
+				</div>
+				<div class="slide_buy">
+					<div class="header_slider_akcia">
+						<div class="cena_procent">
+							<p class="grn">-53 грн</p>
+							<p class="procent">-20%</p>
+						</div>
+							<i class="fas fa-heart"></i>
+					</div>
+					<div class="articl_slider_akcia">
+						<img src="images/slider_akcia4.webp" alt="no photo">
+						<p class="articl_p1">Есть в наличии</p>
+						<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+					</div>
+					<div class="ocenka_slider_akcia"> 
+						<div class="ocenki">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="comment_slider_akcia">
+							<i class="far fa-comment-dots"></i>
+							<p>0</p>
+						</div>
+					</div>
+					<div class="footer_slider_akcia">
+						<div class="cena_producta_div">
+							<p class="cena_product">243 UAH</p>
+							<p class="skidka_product">189.9 UAH</p>
+						</div>
+						<button type="submit">Купить</button>
+					</div>
+				</div>
+				<div class="slide_buy">
+					<div class="header_slider_akcia">
+						<div class="cena_procent">
+							<p class="grn">-53 грн</p>
+							<p class="procent">-20%</p>
+						</div>
+							<i class="fas fa-heart"></i>
+					</div>
+					<div class="articl_slider_akcia">
+						<img src="images/slider_akcia1.webp" alt="no photo">
+						<p class="articl_p1">Есть в наличии</p>
+						<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+					</div>
+					<div class="ocenka_slider_akcia"> 
+						<div class="ocenki">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="comment_slider_akcia">
+							<i class="far fa-comment-dots"></i>
+							<p>0</p>
+						</div>
+					</div>
+					<div class="footer_slider_akcia">
+						<div class="cena_producta_div">
+							<p class="cena_product">243 UAH</p>
+							<p class="skidka_product">189.9 UAH</p>
+						</div>
+						<button type="submit">Купить</button>
+					</div>
+				</div>
+				<div class="slide_buy">
+					<div class="header_slider_akcia">
+						<div class="cena_procent">
+							<p class="grn">-53 грн</p>
+							<p class="procent">-20%</p>
+						</div>
+							<i class="fas fa-heart"></i>
+					</div>
+					<div class="articl_slider_akcia">
+						<img src="images/slider_akcia2.webp" alt="no photo">
+						<p class="articl_p1">Есть в наличии</p>
+						<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
+					</div>
+					<div class="ocenka_slider_akcia"> 
+						<div class="ocenki">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="comment_slider_akcia">
+							<i class="far fa-comment-dots"></i>
+							<p>0</p>
+						</div>
+					</div>
+					<div class="footer_slider_akcia">
+						<div class="cena_producta_div">
+							<p class="cena_product">243 UAH</p>
+							<p class="skidka_product">189.9 UAH</p>
+						</div>
+						<button type="submit">Купить</button>
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+		
+
+		<!-- row_7 -->
+		<div class="row row_7">
+			<div class="col-12">
+				<div class="row_7div1">
+					<p>Отзывы</p>
+				</div>
+			</div>
+		</div>
+		<!-- row_8 -->
+		<div class="row row_8">
+			<div class="col-4">
+				<div class="row_8div">
+					<div class="row_8div1">
+						<p class="otzivi_ocenka">4.8</p>
+						<div class="row8div1_div">
+							<div class="ocenki">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<p>1056 Отзывов</p>
+						</div>
+					</div>
+					<div class="row_8divbutton">
+						<button type="submit">Написать отзыв</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="row_8div">
+					<div class="row_8div2">
+						<div class="row_8div2_name">
+							<p class="otzivi_name">Валерий Мартыненко</p>
+							<p class="otzivi_data">18 апреля 2021 года</p>
+						</div>
+						<div class="ocenki">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</div>
+					<p class="row_8div2_text">Доставка очень быстрая, по качеству: мидии - вопросов нет - оценка 5, слайсы семги - ожидалось большего, кусочки неодинаковые по качеству, - оценка 4-, мясо семги<span class="text_more">на хребтах - вкус хороший, но мяса практически нет, это прокопченные хребты, к пиву годится, просто есть - вряд ли - оценка 3.</span> </p>
+					<div class="btn_dropdown_div">
+						<span class="btn_podrobnoe">Подробное</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="row_8div">
+					<div class="row_8div2">
+						<div class="row_8div2_name">
+							<p class="otzivi_name">Валерий Мартыненко</p>
+							<p class="otzivi_data">18 апреля 2021 года</p>
+						</div>
+						<div class="ocenki">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+					</div>
+					<p class="row_8div2_text">Доставка очень быстрая, по качеству: мидии - вопросов нет - оценка 5, слайсы семги - ожидалось большего, кусочки неодинаковые по качеству, - оценка 4-, мясо семги<span class="text_more">на хребтах - вкус хороший, но мяса практически нет, это прокопченные хребты, к пиву годится, просто есть - вряд ли - оценка 3.</span> </p>
+					<div class="btn_dropdown_div">
+						<span class="btn_podrobnoe">Подробное</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- row_9 -->
+		<div class="row row_9">
+			<div class="col-6">
+				<p class="name_recepti">Рецепты</p>
+			</div>
+			<div class="col-6">
+				<div class="btn_recepti_div">
+					<button class="btn_recepti" type="submit">Все рецепты</button>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- row_10 -->
+		<div class="row row_10">
+			<div class="col-4">
+				<div class="row_10div">
+					<img src="images/recepti_img1.webp" alt="no photo">
+					<div class="row_10div_text">
+						<p class="avtorskie_recepti">НАШИ АВТОРСКИЕ РЕЦЕПТЫ</p>
+						<p class="burger_recept">Брускетта с лососем</p>
+					</div>
+					<button class="row_10div_btn" type="submit">Читать полностью</button>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="row_10div">
+					<img src="images/recepti_img2.webp" alt="no photo">
+					<div class="row_10div_text">
+						<p class="avtorskie_recepti">НАШИ АВТОРСКИЕ РЕЦЕПТЫ</p>
+						<p class="burger_recept">Брускетта со скумбрией</p>
+					</div>
+					<button class="row_10div_btn" type="submit">Читать полностью</button>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="row_10div">
+					<img src="images/recepti_img3.webp" alt="no photo">
+					<div class="row_10div_text">
+						<p class="avtorskie_recepti">НАШИ АВТОРСКИЕ РЕЦЕПТЫ</p>
+						<p class="burger_recept">Брускетта с сельдью в томатном соусе</p>
+					</div>
+					<button class="row_10div_btn" type="submit">Читать полностью</button>
+				</div>
+			</div>	
+		</div>
+
+
+		<!-- row_11 -->
+		<div class="row row_11">
+			<div class="col-12">
+				<div class="row_11div1">
+					<p>О нас</p>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- row_12 -->
+		<div class="row row_12">
+			<div class="col-6">
+					<div class="row12_div1">
+						<div class="row12div1row_1_text1">
+							<div class="text1_div1">
+								<p class="text1_p1">более 200</p>
+								<p class="text1_p2">отправок в день</p>
+							</div>
+							<div class="text1_div2">
+								<p class="text1_p1">более 30 тыс.</p>
+								<p class="text1_p2">клиентов за 2 года работы</p>
+							</div>
+						</div>
+						<div class="row12div1row_1_text2">
+							<div class="text2_div1">
+								<p class="text1_p1">более 8 тыс.</p>
+								<p class="text1_p2">положительных отзыва в Viber чате</p>
+							</div>
+							<div class="text2_div2">
+								<p class="text1_p1">18 тыс.</p>
+								<p class="text1_p2">подписчиков в нашем Instagram профиле</p>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="col-6">
+				<div class="row12_div2">
+					<p class="row_12div2_p">
+						Современное рыбное производство рыбных деликатесов на любой вкус. Для каждого клиента свежая соленая, копченая, вяленая рыба и снековые закуски по минимальным ценам на рынке. Вся продукция проходит строгий контроль на всех этапах 
+						<span class="onas_more">производства, что гарантирует безупречное качество, подтвержденное необходимыми сертификатами. Для розничных клиентов предоставляется возможность  заказать товар от ящика, ведра или упаковки! Приглашаем к сотрудничеству постоянных партнеров, расширяем дилерскую сеть.</span> 
+						<span class="div_btn_onas">
+							<span class="onas_btn">Подробное</span>
+						</span>
+					</p>
+					<button type="submit" class="row_12div2_btn">Перейти в каталог</button>
+				</div>
+			</div>
+		</div>
+		
+
+		<!-- row_13 -->
+		<footer>
+			<div class="row row_13">
+				<div class="col-4">
+					<div class="row_13div_regurovka1">
+						<div class="row13_div1">
+							<p class="row13_div1_header">Связаться с нами</p>
+							<div class="row_13div1_p">
+								<img src="images/footer_img1.webp" class="row_13div1_img1" alt="no photo">
+								<p>0 800 331 063</p>
+							</div>
+							<div class="row_13div1_p">
+								<img src="images/footer_img1.webp" alt="no photo">
+								<p>38 (050) 705 50 54</p>
+							</div>
+							<div class="row_13div1_p">
+								<img src="images/footer_img2.webp" alt="no photo">
+								<p>38 (067) 705 50 54</p>
+							</div>
+							<div class="row_13div1_p">
+								<img src="images/footer_img3.webp" alt="no photo">
+								<p>38 (073) 705 50 54</p>
+							</div>
+							<div class="row_13div1_p">
+								<img src="images/footer_img4.webp" alt="no photo">
+								<p>support@taf.kiev.ua</p>
+							</div>
+							<div class="row_13div1_p">
+								<img src="images/footer_img5.webp" alt="no photo">
+								<p>г. Киев, ул. Волынская 34/1</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="row13_div2">
+						<p class="row13_div2_header">График работы call центра</p>	
+						<div class="row13_div2_p">
+							<p class="row13_div2_p_den">Понедельник</p>
+							<p class="row13_div2_p_chasi">11:00 - 18:00</p>
+						</div>
+						<div class="row13_div2_p">
+							<p class="row13_div2_p_den">Вторник</p>
+							<p class="row13_div2_p_chasi">11:00 - 18:00</p>
+						</div>
+						<div class="row13_div2_p">
+							<p class="row13_div2_p_den">Среда</p>
+							<p class="row13_div2_p_chasi">11:00 - 18:00</p>
+						</div>
+						<div class="row13_div2_p">
+							<p class="row13_div2_p_den">Четверг</p>
+							<p class="row13_div2_p_chasi">11:00 - 18:00</p>
+						</div>
+						<div class="row13_div2_p">
+							<p class="row13_div2_p_den">Пятница</p>
+							<p class="row13_div2_p_chasi">11:00 - 18:00</p>
+						</div>
+						<div class="row13_div2_p">
+							<p class="row13_div2_p_den">Суббота</p>
+							<p class="row13_div2_p_chasi">Выходной</p>
+						</div>
+						<div class="row13_div2_p">
+							<p class="row13_div2_p_den">Воскресенье</p>
+							<p class="row13_div2_p_chasi">Выходной</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="row_13div_regurovka3">
+						<div class="row13_div3">
+							<p class="row13_div3_header">Информация</p>	
+							<div class="row13_div3_p">
+								<p>Оплата и доставка</p>
+								<p>Частые вопросы</p>
+								<p>Рецепты</p>
+							</div>
+							<div class="row13_div3_lin"></div>
+							<div class="row13_div3_iconi">
+								<i class="fab fa-instagram icon_insta"></i>
+								<i class="fab fa-facebook-f icon_fb"></i>
+								<i class="fab fa-viber icon_viber"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+
+
+
+
+
+</div>
+	<script src="js/index.js"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
