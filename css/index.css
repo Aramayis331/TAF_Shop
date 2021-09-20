@@ -455,9 +455,8 @@ body {
 }
 .slide_akcia {
 	min-width: 24%;
-	height: 90%;
 	background-color: #528FD5;
-	margin: 0 20px 0 0;
+	margin: 0 14.7px 0 0;
 	position: relative;
 	left: 0;
 	border-radius: 20px;
@@ -631,7 +630,7 @@ body {
 	min-width: 24%;
 	height: 90%;
 	background-color: #528FD5;
-	margin: 0 20px 0 0;
+	margin: 0 14.7px 0 0;
 	position: relative;
 	left: 0;
 	border-radius: 20px;
@@ -723,14 +722,13 @@ body {
 .btn_podrobnoe {
 	font-weight: 500;
 	cursor: pointer;
-	display: none;
 }
 .btn_dropdown_div {
 	display: inline-block;
 	border: 2px solid #000000;
 	border-radius: 5px;
 	padding: 2px 10px;
-	
+	display: none;
 }
 .row_8div2_text {
 	margin-top: 10px;
@@ -1025,5 +1023,8 @@ font-weight: 600;
 	color: #ffffff;
 	transition: 0.5s;
 	
+}
+.div_btn_onas  {
+	display: none;
 }
 /*  row_13--END  */

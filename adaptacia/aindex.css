@@ -1,7 +1,31 @@
+@media only screen and (max-width: 1200px) { 
+	.slide_akcia {
+		min-width: 32.5%;
+		margin:  0 10px  0 0;
+	}
+	.slide_buy {
+		min-width: 32.5%;
+		margin:  0 10px  0 0;
+	}
+}
 @media only screen and (max-width: 1177px) {
 	.row_8div2_text {
 		font-weight: 700;
 		font-size: 14px;
+	}
+	.slide_akcia {
+		margin: 0px 9.3px 0 0;
+	}
+	.slide_buy {
+		margin: 0px 9.3px 0 0;
+	}
+}
+@media only screen and (max-width: 1073px) {
+	.slide_akcia {
+		margin: 0px 8.5px 0 0;
+	}
+	.slide_buy {
+		margin: 0px 8.5px 0 0;
 	}
 }
 @media only screen and (max-width: 1006px) {
@@ -22,14 +46,21 @@
 	}
 }
 @media only screen and (max-width: 991px) {
-
+	.slide_akcia {
+		margin: 0px 8px 0 0;
+	}
+	.slide_buy {
+		margin: 0px 8px 0 0;
+	}
 }
 @media only screen and (max-width: 982px) {
 	.text_more {
 		display: none;
 	}
+	.btn_dropdown_div {
+		display: inline-block;
+	}
 	.btn_podrobnoe {
-		display: block;
 		color: #000000;
 	}
 	.row_8div1 {
@@ -80,6 +111,14 @@
 	.navigation_auto {
 		margin-top: 315px;
 		width: 95%;
+	}
+}
+@media only screen and (max-width: 919px) {
+	.slide_akcia {
+		margin: 0px 7px 0 0;
+	}
+	.slide_buy {
+		margin: 0px 7px 0 0;
 	}
 }
 @media only screen and (max-width: 915px) { 
@@ -162,7 +201,23 @@
 		padding: 3px;
 	}
 }
+@media only screen and (max-width: 800px) { 
+	.slide_akcia {
+		margin: 0px 6px 0 0;
+	}
+	.slide_buy {
+		margin: 0px 6px 0 0;
+	}
+}
 @media only screen and (max-width: 776px) {
+	.slide_akcia {
+		min-width: 49%;
+		margin:  0 10px  0 0;
+	}
+	.slide_buy {
+		min-width: 49%;
+		margin:  0 10px  0 0;
+	}
 	.row1_div {
 		padding: 30px 0px;
 	}

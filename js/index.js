@@ -17,15 +17,24 @@ let arrow_left_akcia = document.getElementById('arrow_left_akcia');
 let slide_akcia = document.getElementsByClassName('slide_akcia');
 let slider_akcia_page = Math.ceil(slide_akcia.length/4);
 let l = 0;
-let movePer = 25.48;
+let movePer = 25.13;
 let count_product = slide_akcia.length - 4;
 let maxMover = count_product * movePer + 5;
 
-let mobile_view = window.matchMedia("(max-width: 768px)");
-if (mobile_view.matches) {
-	movePer = 50.36;
-	maxMover = 504;
-}
+let mob_view = window.matchMedia("(max-width: 1200px)");
+	if (mob_view.matches)
+	{
+		movePer = 33.25;
+		count_product = slide_akcia.length - 3;
+		maxMover = count_product * movePer + 5;
+	}
+mob_view = window.matchMedia("(max-width: 776px)");
+	if (mob_view.matches)
+	{
+		movePer = 50.25;
+		count_product = slide_akcia.length - 3;
+		maxMover = count_product * movePer + 5;
+	}
 
 let right_mover_akcia = () => {
 	arrow_left_akcia.style.color = '#000000';
@@ -68,15 +77,24 @@ let slide_buy = document.getElementsByClassName('slide_buy');
 let slider_buy_page = Math.ceil(slide_buy.length/4);
 
 let p = 0;
-let movePer_buy = 25.48;
+let movePer_buy = 25.13;
 let count_product_buy = slide_buy.length - 4;
 let maxMover_buy = count_product * movePer + 5;
 
-let mobile_view_buy = window.matchMedia("(max-width: 768px)");
-if (mobile_view_buy.matches) {
-	movePer_buy = 50.36;
-	maxMover_buy = 504;
-}
+let mob_view_buy = window.matchMedia("(max-width: 1200px)");
+	if (mob_view_buy.matches)
+	{
+		movePer_buy = 33.25;
+		count_product_buy = slide_buy.length - 3;
+		maxMover_buy = count_product_buy * movePer_buy + 5;
+	}
+mob_view_buy = window.matchMedia("(max-width: 776px)");
+	if (mob_view_buy.matches)
+	{
+		movePer_buy = 50.25;
+		count_product_buy = slide_buy.length - 3;
+		maxMover_buy = count_product_buy * movePer_buy + 5;
+	}
 
 let right_mover_buy = () => {
 	arrow_left_buy.style.color = "#000000";
