@@ -52,6 +52,9 @@
 	.slide_buy {
 		margin: 0px 8px 0 0;
 	}
+	.header_input {
+		width: 27%;
+	}
 }
 @media only screen and (max-width: 982px) {
 	.text_more {
@@ -115,10 +118,10 @@
 }
 @media only screen and (max-width: 919px) {
 	.slide_akcia {
-		margin: 0px 7px 0 0;
+		margin: 0px 7.5px 0 0;
 	}
 	.slide_buy {
-		margin: 0px 7px 0 0;
+		margin: 0px 7.5px 0 0;
 	}
 }
 @media only screen and (max-width: 915px) { 
@@ -192,7 +195,7 @@
 		margin-left: 10px;
 	}
 	.header_input {
-		width: 25%;
+		width: 30%;
 	}
 	.header_input input::placeholder {
 		font-size: 14px;
@@ -210,6 +213,9 @@
 	}
 }
 @media only screen and (max-width: 776px) {
+	.row_7div1 {
+		margin: -10px 0px 10px 0px;
+	}
 	.slide_akcia {
 		min-width: 49%;
 		margin:  0 10px  0 0;
@@ -299,9 +305,6 @@
 	.row_7div1 p {
 		font-size: 30px;
 	}
-	.row_7div1 {
-		margin: 10px 0px 10px 0px;
-	}
 	.otzivi_ocenka {
 		font-size: 70px;
 	}
@@ -379,4 +382,366 @@
 	.row13_div3_iconi i {
 		font-size: 21px;
 	}
+	.row_13div1_p img {
+		width: 18px;
+	}
+	.row_13div1_p p {
+		margin-left: 5px;
+	}
+}
+@media only screen and (max-width: 709px) { 
+	.row13_div2_header, .row13_div1_header, .row13_div3_header {
+		font-size: 14px;
+	}
+	.row13_div2_p_den {
+		font-size: 13px;
+	}
+	.row13_div2_p_chasi {
+		font-size: 13px;
+	}
+	.row13_div3_p p {
+		font-size: 13px;
+	}
+	.row13_div3_iconi i {
+		font-size: 19px;
+	}
+	.row_13div1_p p {
+		font-size: 13px;
+	}
+	.header_input input::placeholder {
+		font-size: 13px;
+	}
+	.navbar-toggler {
+		padding: 0.5rem 0.9rem;
+		font-size: 1.5rem;
+	}
+	.header_logo {
+		width: 90px;
+		height: 90px;
+	}
+	.row_8divbutton button {
+		margin: 0px 2px;
+	}
+	.row_8div2_text {
+		font-size: 12px;
+		font-weight: 900;
+	}
+	.row_8div2_text {
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+	.ocenki i {
+		font-size: 13px;
+	}
+	.otzivi_name {
+		font-size: 14px;
+		font-weight: 900;
+	}
+	.otzivi_data {
+		font-size: 14px;
+	}
+	.btn_podrobnoe {
+		font-size: 14px;
+	}
+	.btn_dropdown_div {
+		padding: 0px 8px;
+	}
+	.row_10div_btn {
+		padding: 3px 10px;
+		font-size: 14px;
+	}
+	.burger_recept {
+		font-size: 16px;
+	}
+	.row_4div1 p {
+		font-size: 16px;
+	}
+	.row_12div2_p {
+		font-size: 14px;
+	}
+	.row_4 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.col_kategoria {
+		width: 50%;
+	}
+	.row_4div1edit {
+		padding: 0px 0px 20px 0px;
+	}
+	.row_4div1 p {
+		font-size: 18px;
+	}
+}
+@media only screen and (max-width: 692px) { 
+	.slide_akcia {
+		margin: 0 9px 0 0;
+	}
+	.slide_buy {
+		margin: 0 9px 0 0;
+	}
+}	
+@media only screen and (max-width: 650px) { 
+	.slide_akcia {
+		margin: 0 8px 0 0;
+	}
+	.slide_buy {
+		margin: 0 8px 0 0;
+	}
+	.offcanvas-end {
+		width: 350px;
+	}
+	.li1_a, .li3_a, .li4_a, .li5_a, .li6_a, .li7_a, .li8_a {
+		font-size: 16px;
+	}
+	.fish_dropdown {
+		font-size: 16px;
+	}
+	.icon_user a {
+		font-size: 16px;
+	}
+	.btn_close {
+		width: 30px;
+		height: 30px;
+		font-size: 17px;
+	}
+}
+@media only screen and (max-width: 633px) { 
+	.slide_akcia {
+		margin: 0 8px 0 0;
+	}
+	.slide_buy {
+		margin: 0 8px 0 0;
+	}
+	.row1_div {
+		justify-content: flex-start;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 35px 0px;
+	}
+	.row_1div2 {
+		margin: 10px 20px 0px 0px;
+	}
+	.row_1div3 {
+		margin: 10px 0px 0px 20px;
+	}
+	.row1_div {
+		padding: 10px 0px;
+	}
+	.slider {
+		height: 250px;
+	}
+	.slides {
+		height: 250px;
+	}
+	.slide img {
+		height: 250px;
+	}
+	.navigation_auto {
+		margin-top: 220px;
+	}
+	.navigation_manual {
+		margin-top: 220px;
+	}
+	.row_3div1 p {
+		font-size: 27px;
+	}
+	.row_5div1 p {
+		font-size: 27px;
+	}
+	.row_6div1 p {
+		font-size: 27px;
+	}
+	.row_7div1 p {
+		font-size: 27px;
+	}
+	.row_7div1 {
+		margin: -20px 0px 10px 0px;
+	}
+	.row_8_col {
+		width: 100%;
+	}
+	.row_8div2 {
+		flex-direction: row; 
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	.row_8div2_name {
+		margin-right: 10px;
+	}
+	.row_8div1 {
+		align-items: center;
+		flex-direction: row;
+		margin-bottom: 0px;
+	}
+	.row_8div {
+		min-height: 140px;
+		height: 90%;
+		margin-bottom: 10px;
+	}
+	.row_8divbutton button {
+		padding: 3px 21px;
+	}
+	.otzivi_ocenka {
+		font-size: 57px;
+	}
+	.otzivi_ocenka {
+		margin-right: 10px;
+	}
+	.name_recepti {
+		font-size: 27px;
+	}
+	.btn_recepti {
+		padding: 2px 19px;
+	}
+	.row_8 {
+		margin-bottom: 5px;
+	}
+	.row_10 {
+		justify-content: center;
+		align-items: center;
+	}
+	.row_10_col {
+		width: 100%;
+	}
+	.row_10div {
+		height: 320px;
+		margin: 5px;
+	}
+	.row_10div img {
+		width: 100%;
+		height: 320px;
+		border-radius: 35px;
+	}
+	.row_10div_btn {
+		padding: 5px 30px;
+		font-size: 15px;
+	}
+	.burger_recept {
+		font-size: 20px;
+	}
+	.avtorskie_recepti {
+		font-size: 12px;
+	}
+	.row_10div_text {
+		top: 50px;
+	}
+	.row_10div_btn {
+		bottom: 30px;
+	}
+	.row_11div1 {
+		margin: 0px 0px 10px 0px;
+	}
+	.row_11div1 p {
+		font-size: 27px;
+	}
+	.text1_p1 {
+		font-size: 15px;
+	}
+	.text1_p2 {
+		font-size: 12px;
+	}
+	.row_12div2_btn {
+		font-size: 14px;
+	}
+	.row_12div2_p {
+		font-size: 13px;
+		font-weight: 700;
+	}
+	.row_12col {
+		width: 100%;
+	}
+	.row12div1row_1_text1, .row12div1row_1_text2 {
+		margin-bottom: 10px;
+	}
+	.text1_div1, .text1_div2, .text2_div1, .text2_div2 {
+		width: 48%;
+	}
+	.text1_p1 {
+		font-size: 19px;
+	}
+	.text1_p2 {
+		font-size: 13px;
+		font-weight: 600;
+	}
+	.row12_div2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.row_12div2_p {
+		text-align: center;
+	}
+	.row_12 {
+		margin-bottom: 10px;
+	}
+	.row_13 {
+		padding: 10px 0px;
+	}
+	.row_13col_div1 {
+		order: 2;
+		width: 50%;
+	}
+	.row_13col_div2 {
+		order: 1;
+		width: 100%;
+	}
+	.row_13col_div3 {
+		order: 3;
+		width: 50%;
+	}
+	.row_13div_regurovka3 {
+		justify-content: flex-end;
+		margin: 0px;
+	}
+	.row_13div_regurovka1 {
+		justify-content: flex-start;
+		margin: 0px;
+	}
+	.row13_div1_header {
+		text-align: start;
+	}
+	.row13_div2 {
+		margin-bottom: 10px;
+	}
+	.row13_div2_header {
+		margin-bottom: 0px;
+	}
+	.row13_div1_header, .row13_div3_header {
+		margin-bottom: 10px;
+	}
+
+}
+@media only screen and (max-width: 575px) { 
+	.header_input {
+		width: 33%;
+	}
+	.header_input input {
+		padding: 2px;
+	}
+	.header_input input::placeholder {
+		font-size: 12.5px;
+	}
+	.slide_akcia {
+		margin: 0 7px 0 0;
+	}
+	.slide_buy {
+		margin: 0 7px 0 0;
+	}
+	.offcanvas-end {
+		width: 300px;
+	}
+}
+@media only screen and (max-width: 505px) { 
+	.slide_akcia {
+		margin: 0 6px 0 0;
+	}
+	.slide_buy {
+		margin: 0 6px 0 0;
+	}
+}
+@media only screen and (max-width: 480px) { 
+	/* Minjev Ste Tamama */
 }

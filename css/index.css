@@ -628,7 +628,6 @@ body {
 }
 .slide_buy {
 	min-width: 24%;
-	height: 90%;
 	background-color: #528FD5;
 	margin: 0 14.7px 0 0;
 	position: relative;
@@ -645,7 +644,7 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	margin: 0px 0px 25px 0px;
+	margin: 0px 0px 30px 0px;
 }
 .row_7div1 p {
 	font-size: 36px;
@@ -724,7 +723,6 @@ body {
 	cursor: pointer;
 }
 .btn_dropdown_div {
-	display: inline-block;
 	border: 2px solid #000000;
 	border-radius: 5px;
 	padding: 2px 10px;
@@ -894,6 +892,7 @@ body {
 	font-size: 15px;
 	cursor: pointer;
 	font-weight: 500;
+	color: #000000;
 }
 .row_12div2_p {
 	font-weight: 500;

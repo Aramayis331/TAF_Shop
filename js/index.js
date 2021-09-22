@@ -32,7 +32,7 @@ mob_view = window.matchMedia("(max-width: 776px)");
 	if (mob_view.matches)
 	{
 		movePer = 50.25;
-		count_product = slide_akcia.length - 3;
+		count_product = slide_akcia.length - 2;
 		maxMover = count_product * movePer + 5;
 	}
 
@@ -92,7 +92,7 @@ mob_view_buy = window.matchMedia("(max-width: 776px)");
 	if (mob_view_buy.matches)
 	{
 		movePer_buy = 50.25;
-		count_product_buy = slide_buy.length - 3;
+		count_product_buy = slide_buy.length - 2;
 		maxMover_buy = count_product_buy * movePer_buy + 5;
 	}
 
