@@ -35,7 +35,7 @@ mob_view = window.matchMedia("(max-width: 776px)");
 		count_product = slide_akcia.length - 2;
 		maxMover = count_product * movePer + 5;
 	}
-	mob_view = window.matchMedia("(max-width: 480px)");
+mob_view = window.matchMedia("(max-width: 480px)");
 	if (mob_view.matches)
 	{
 		movePer = 93;
@@ -86,7 +86,7 @@ let slider_buy_page = Math.ceil(slide_buy.length/4);
 let p = 0;
 let movePer_buy = 25.13;
 let count_product_buy = slide_buy.length - 4;
-let maxMover_buy = count_product * movePer + 5;
+let maxMover_buy = count_product_buy * movePer + 5;
 
 let mob_view_buy = window.matchMedia("(max-width: 1200px)");
 	if (mob_view_buy.matches)
@@ -105,11 +105,10 @@ mob_view_buy = window.matchMedia("(max-width: 776px)");
 mob_view_buy = window.matchMedia("(max-width: 480px)");
 	if (mob_view_buy.matches)
 	{
-		movePer_buy = 93.25;
+		movePer_buy = 93;
 		count_product_buy = slide_buy.length - 1;
 		maxMover_buy = count_product_buy * movePer_buy + 5;
 	}
-
 
 let right_mover_buy = () => {
 	arrow_left_buy.style.color = "#000000";
