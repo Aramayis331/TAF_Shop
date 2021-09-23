@@ -720,6 +720,7 @@
 	}
 	.header_input input {
 		padding: 2px;
+		font-size: 14px;
 	}
 	.header_input input::placeholder {
 		font-size: 12.5px;
@@ -732,6 +733,12 @@
 	}
 	.offcanvas-end {
 		width: 300px;
+	}
+	.dropdown_item {
+		font-size: 13px;
+	}
+	.li1, .li2, .li3, .li4, .li5, .li6, .li7, .li8 {
+		padding: 12px 0px;
 	}
 }
 @media only screen and (max-width: 505px) { 
@@ -872,9 +879,160 @@
 	.row_11div1 p {
 		font-size: 25px;
 	}
-
-
-
+	.li1, .li2, .li3, .li4, .li5, .li6, .li7, .li8 {
+		padding: 10px 0px;
+	}
+	.li1_a,.li2_a, .li3_a, .li4_a, .li5_a, .li6_a, .li7_a, .li8_a {
+		font-size: 14px;
+	}
+	.fish_dropdown {
+		font-size: 14px;
+	}
+	.dropdown_item {
+		font-size: 13px;
+	}
+	.offcanvas-end {
+		width: 250px;
+	}
+	.btn_close {
+		width: 25px;
+		height: 25px;
+		font-size: 14px;
+	}
+	.li1 img, .li2 img, .li3 img, .li4 img, .li5 img, .li6 img, .li7 img, .li8 img, .dropdown_li img {
+		width: 12%;
+	}
+	.icon_user a {
+		font-size: 15px;
+	}
+	.icon_user i {
+		padding-right: 5px;
+		font-size: 15px;
+	}
+	.header_input {
+		display: none;
+	}
+	.row_8div {
+		height: 95%;
+	}
+}
+@media only screen and (max-width: 380px) { 
+	.slider_buy {
+		height: 360px;
+	}
+	.slider_akcia {
+		height: 360px;
+	}
+	.articl_slider_akcia img {
+		width: 70%;
+	}
+	.articl_p2 {
+		font-size: 15px;
+		margin-bottom: 0px;
+	}
+	.articl_p1 {
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.grn {
+		font-size: 14px;
+	}
+	.procent {
+		font-size: 14px;
+	}
+	.header_slider_akcia i {
+		font-size: 29px;
+	}
+	.comment_slider_akcia i {
+		font-size: 22px;
+	}
+	.comment_slider_akcia p {
+		font-weight: 600;
+		font-size: 18px;
+	}
+	.btn_recepti {
+		padding: 2px 16px;
+		font-size: 15px;
+	}
+	.row_10div img {
+		width: 100%;
+		height: 250px;
+	}
+	.row_10div {
+		height: 250px;
+		margin: 5px;
+	}
+	.row_10div_text {
+		top: 25px;
+	}
+	.avtorskie_recepti {
+		font-size: 10px;
+	}
+	.burger_recept {
+		font-size: 17px;
+	}
+	.row_10div_btn {
+		bottom: 20px;
+	}
+	.offcanvas-end {
+		width: 200px;
+	}
+	.fish_dropdown {
+		font-size: 13px;
+	}
+	.li1_a, .li2_a, .li3_a, .li4_a, .li5_a, .li6_a, .li7_a, .li8_a {
+		font-size: 13px;
+	}
+	.dropdown_item {
+		font-size: 11px;
+	}
+	.dropdown_menu li {
+		padding: 3px;
+	}
+	.dropdown_li {
+		padding: 5px 0px;
+	}
+	.icon_user a {
+		font-size: 13px;
+	}
+	.icon_user i {
+		font-size: 13px;
+	}
+	.btn_close {
+		width: 22px;
+		height: 22px;
+		font-size: 13px;
+	}
+	.offcanvas-body {
+		padding: 0rem 1rem;
+	}
+	.row_4div1 p {
+		font-size: 17px;
+	}
+	.slide img {
+		height: 160px;
+	}
+	.slides {
+		height: 160px;
+	}
+	.slider {
+		height: 160px;
+	}
+	.navigation_auto {
+		margin-top: 137px;
+	}
+	.navigation_manual {
+		margin-top: 137px;
+	}
+	.manual_btn:not(:last-child) {
+		margin-right: 30px;
+	}
+	.navigation_auto div:not(:last-child) {
+		margin-right: 30px;
+	}
+	.row_1div1 p {
+		font-size: 15px;
+	}
 
 
 

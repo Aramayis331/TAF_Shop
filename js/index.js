@@ -8,7 +8,7 @@ setInterval(function() {
 	if(counter > 4) {
 		counter = 1;
 	}
-}, 10000000);
+}, 5000);
 
 // SLIDER_AKCIA //
 let arrow_right_akcia = document.getElementById('arrow_right_akcia');
