@@ -762,6 +762,123 @@
 		justify-content: center;
 		align-items: center;
 	}
+	.row_1div2 {
+		font-size: 15px;
+		padding: 5px 3px;
+	}
+	.row_1div2 {
+		margin: 10px 5px 0px 0px;
+	}
+	.row_1div3 {
+		margin: 10px 0px 0px 0px;
+	}
+	.row_1div3 {
+		padding: 3px 8px;
+	}
+	.row_1div1 {
+		padding: 5px 35px;
+	}
+	.row1div2_div2 {
+		width: 72px;
+		height: 72px;
+	}
+	.row1div2_div1 {
+		padding: 16px 65px;
+	}
+	.basket_count_div {
+		width: 13px;
+		height: 13px;
+		font-size: 10px;
+		right: 8px;
+		bottom: 10px;
+	}
+	.like_count_div {
+		width: 13px;
+		height: 13px;
+		font-size: 10px;
+		right: 5px;
+		top: 0px;
+	}
+	.navbar-toggler {
+		padding: 0.4rem 0.8rem;
+		font-size: 1.5rem;
+	}
+	.header_input input::placeholder {
+		font-size: 11px;
+		font-weight: 500;
+	}
+	.header_logo {
+		width: 85px;
+		height: 85px;
+	}
+	.slide img {
+		height: 200px;
+	}
+	.slides {
+		height: 200px;
+	}
+	.slider {
+		height: 200px;
+	}
+	.navigation_auto {
+		margin-top: 175px;
+	}
+	.navigation_manual {
+		margin-top: 175px;
+	}
+	.navigation_auto div {
+		padding: 4px;
+		border: 1px solid #528FD5;
+	}
+	.manual_btn {
+		padding: 4px;
+		border: 1px solid #528FD5;
+	}
+	.row_3div1 p {
+		font-size: 25px;
+	}
+	.row_5div1 p {
+		font-size: 25px;
+	}
+	.arrow_left {
+		font-size: 24px;
+	}
+	.arrow_right {
+		font-size: 24px;
+	}
+	.row_6div1 p {
+		font-size: 25px;
+	}
+	.slider_akcia {
+		height: 450px;
+	}
+	.slider_buy {
+		height: 450px;
+	}
+	.row_7div1 p {
+		font-size: 25px;
+	}
+	.row_7div1 {
+		margin: -10px 0px 10px 0px;
+	}
+	.row_10div img {
+		width: 95%;
+		height: 300px;
+	}
+	.row_10div {
+		height: 300px;
+		margin: 10px;
+	}
+	.row_11div1 p {
+		font-size: 25px;
+	}
+
+
+
+
+
+
+
 
 
 
