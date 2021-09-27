@@ -21,8 +21,6 @@ $('.slider_akcia').slick({
 	{
 		breakpoint: 1024,
 		settings: {
-			infinite: false,
-			speed: 500,
 			arrows: true,
 			slidesToShow: 4,
 			slidesToScroll: 1,
@@ -31,8 +29,6 @@ $('.slider_akcia').slick({
 	{
 		breakpoint: 992,
 		settings: {
-			infinite: false,
-			speed: 500,
 			arrows: true,
 			slidesToShow: 3,
 			slidesToScroll: 1,
@@ -41,8 +37,6 @@ $('.slider_akcia').slick({
 	{
 		breakpoint: 768,
 		settings: {
-			infinite: false,
-			speed: 500,
 			arrows: true,
 			slidesToShow: 2,
 			slidesToScroll: 1,
@@ -51,8 +45,6 @@ $('.slider_akcia').slick({
 	{
 		breakpoint: 481,
 		settings: {
-			infinite: false,
-			speed: 500,
 			arrows: false,
 			slidesToShow: 1,
 			slidesToScroll: 1,
@@ -71,8 +63,6 @@ $('.slider_buy').slick({
 	{
 		breakpoint: 1024,
 		settings: {
-			infinite: false,
-			speed: 500,
 			arrows: true,
 			slidesToShow: 4,
 			slidesToScroll: 1,
@@ -81,8 +71,6 @@ $('.slider_buy').slick({
 	{
 		breakpoint: 992,
 		settings: {
-			infinite: false,
-			speed: 500,
 			arrows: true,
 			slidesToShow: 3,
 			slidesToScroll: 1,
@@ -91,8 +79,6 @@ $('.slider_buy').slick({
 	{
 		breakpoint: 768,
 		settings: {
-			infinite: false,
-			speed: 500,
 			arrows: true,
 			slidesToShow: 2,
 			slidesToScroll: 1,
@@ -101,8 +87,6 @@ $('.slider_buy').slick({
 	{
 		breakpoint: 481,
 		settings: {
-			infinite: true,
-			speed: 500,
 			arrows: false,
 			slidesToShow: 1,
 			slidesToScroll: 1,
