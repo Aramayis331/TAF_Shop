@@ -101,7 +101,7 @@ $('.slider_buy').slick({
 	{
 		breakpoint: 481,
 		settings: {
-			infinite: false,
+			infinite: true,
 			speed: 500,
 			arrows: false,
 			slidesToShow: 1,
