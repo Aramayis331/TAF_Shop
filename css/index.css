@@ -1,6 +1,253 @@
 body {
 	background-color: #A9C7EA;
 }
+
+
+/*  MODAL--LOGIN--START  */
+.modal-content {
+	background-color: #528FD5;
+	padding: 5px;
+}
+.modal_header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.close_modal {
+	background-color: #000000;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.close_modal i {
+	cursor: pointer;
+	color: #ffffff;
+}
+.modal_title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 45px;
+}
+.modal_titlep1:hover {
+	border-bottom: 2px solid #A9C7EA;
+	color: #ffffff;
+	transition: 0.5s;
+}
+.modal_titlep2:hover {
+	border-bottom: 2px solid #A9C7EA;
+	color: #ffffff;
+	transition: 0.5s;
+}
+.modal_titlep1 {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0px 20px 0px 0px;
+	cursor: pointer;
+	padding: 0px 0px 5px 0px;
+	color: #000000;
+}
+.modal_titlep2 {
+	color: #000000;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0px 0px 0px 20px;
+	cursor: pointer;
+	padding: 0px 0px 5px 0px;
+}
+.inputs_div_log {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 0px 20px 0px;
+}
+.inputs_div_reg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 0px 30px 0px;
+}
+.full_name_div {
+	border-bottom: 2px solid #A9C7EA;
+	width: 60%;
+	height: 50px;
+	margin: 8px 0px;
+	padding: 8px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nik_div {
+	border-bottom: 2px solid #A9C7EA;
+	width: 60%;
+	height: 50px;
+	margin: 8px 0px;
+	padding: 8px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.login_div {
+	border-bottom: 2px solid #A9C7EA;
+	width: 60%;
+	height: 50px;
+	margin: 8px 0px;
+	padding: 8px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.password_div {
+	border-bottom: 2px solid #A9C7EA;
+	width: 60%;
+	height: 50px;
+	margin: 8px 0px;
+	padding: 8px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.login_input {
+	border: none;
+	outline: none;
+	background: none;
+	color: #ffffff;
+	cursor: pointer;
+	width: 90%;
+	margin: 0px 5px 0px 0px;
+}
+.password_input {
+	color: #ffffff;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+	width: 90%;
+	margin: 0px 5px 0px 0px;
+}
+.login_input::placeholder {
+	color: #ffffff;
+}
+.password_input::placeholder {
+	color: #ffffff;
+}
+.icon_sigin {
+    margin: 0 5px 0px 0px;
+}
+.div_checbkox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.text_zapomnit {
+	color: #000000;
+	margin: 0px 0px 0px 10px;
+	font-weight: 500;
+}
+.text_zapomnit:hover {
+	color: #ffffff;
+	transition: 0.5s;
+}
+/* checkbox styls */
+.chechbox_label {
+	text-align: center;
+	cursor: pointer;
+	display: flex;
+}
+input[type="checkbox"] {
+	display: none;
+}
+.chechbox_label::before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border: 2px solid #000000;
+	background: transparent;
+	vertical-align: sub;
+}
+input[type="checkbox"]:checked + label::before {
+	background-image: url(../images/galochka.webp);
+	background-repeat: no-repeat;
+	background-position-y: 5px;
+	background-position-x: 1px;
+	background-size: 90%;
+}
+.btn_sign_in {
+	background-color: transparent;
+	color: #ffffff;
+	border: 2px solid #000000;
+	padding: 5px 120px;
+}
+#sigin_nik {
+	display: none;
+	margin: 0px;
+	cursor: pointer;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+	border: 1px solid #528FD5;
+	-webkit-text-fill-color: #ffffff;
+	-webkit-box-shadow: 0 0 0px 1000px #528FD5 inset;
+}
+.modal-backdrop.show1 {
+    opacity: 1;
+}
+#sigin_nik:hover {
+	color: #ffffff;
+	transition: 1s;
+}
+.btn_sign_in:hover {
+	color: #000000;
+	transition: 1s;
+}
+.eye_span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hide1 {
+	display: none;
+	cursor: pointer;
+}
+.hide2 {
+	cursor: pointer;
+}
+
+#spasibo_reg, #parol_nesovpadaet, #neverni_pass_log {
+	display: none;
+	color: #ffffff;
+	text-align: center;
+	cursor: pointer;
+	font-size: 14px;
+	margin: 0;
+}
+.registracia {
+	background-color: transparent;
+	color: #ffffff;
+	border: 2px solid #000000;
+	padding: 5px 70px;
+}	
+.registracia:hover {
+	color: #000000;
+	transition: 1s;
+}
+
+.modal_footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*  MODAL--LOGIN--END  */
+
+
 /*  HEADER--START  */
 .navbar {
     padding-top: 0rem;
@@ -57,10 +304,6 @@ body {
 .icon_user i {
 	padding-right: 10px;
 }
-.icon_user p {
-	margin: 0px;
-	cursor: pointer;
-}
 .li1_a, .li2_a, .li3_a, .li4_a, .li5_a, .li6_a, .li7_a, .li8_a {
 	text-decoration: none;
 }
@@ -80,6 +323,7 @@ body {
 	color: red;
 	font-weight: 500;
 	margin-left: 5px;
+	font-size: 17px;
 }
 .fish_dropdown {
 	font-size: 17px;
@@ -121,11 +365,13 @@ body {
 .icon_user i {
 	color: #000000;
 }
-.icon_user a {
+.icon_user_p {
 	text-decoration: none;
 	color: #000000;
+	margin: 0px;
+	cursor: pointer;
 }
-.icon_user a:hover {
+.icon_user_p:hover {
 	color: #ffffff;
 	transition: 0.5s;
 }

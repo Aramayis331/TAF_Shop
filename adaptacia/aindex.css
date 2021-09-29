@@ -504,7 +504,7 @@
 	.fish_dropdown {
 		font-size: 16px;
 	}
-	.icon_user a {
+	.icon_user_p {
 		font-size: 16px;
 	}
 	.btn_close {
@@ -907,7 +907,7 @@
 	.li1 img, .li2 img, .li3 img, .li4 img, .li5 img, .li6 img, .li7 img, .li8 img, .dropdown_li img {
 		width: 12%;
 	}
-	.icon_user a {
+	.icon_user_p {
 		font-size: 15px;
 	}
 	.icon_user i {
@@ -997,7 +997,7 @@
 	.dropdown_li {
 		padding: 5px 0px;
 	}
-	.icon_user a {
+	.icon_user_p {
 		font-size: 13px;
 	}
 	.icon_user i {
