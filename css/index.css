@@ -13,18 +13,10 @@ body {
 	justify-content: flex-end;
 	align-items: center;
 }
-.close_modal {
-	background-color: #000000;
-	border-radius: 50%;
-	width: 25px;
-	height: 25px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 .close_modal i {
 	cursor: pointer;
-	color: #ffffff;
+	color: #000000;
+	font-size: 19px;
 }
 .modal_title {
 	display: flex;
@@ -113,7 +105,7 @@ body {
 	align-items: center;
 }
 .login_input {
-	border: none;
+	border: none !important;
 	outline: none;
 	background: none;
 	color: #ffffff;
@@ -143,6 +135,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 0px 0px 20px 0px;
 }
 .text_zapomnit {
 	color: #000000;
@@ -184,7 +177,7 @@ input[type="checkbox"]:checked + label::before {
 	border: 2px solid #000000;
 	padding: 5px 120px;
 }
-#sigin_nik {
+#sigin_nik_navbar {
 	display: none;
 	margin: 0px;
 	cursor: pointer;
@@ -193,14 +186,14 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active  {
-	border: 1px solid #528FD5;
+	border: none !important;
 	-webkit-text-fill-color: #ffffff;
 	-webkit-box-shadow: 0 0 0px 1000px #528FD5 inset;
 }
 .modal-backdrop.show1 {
     opacity: 1;
 }
-#sigin_nik:hover {
+#sigin_nik_navbar:hover {
 	color: #ffffff;
 	transition: 1s;
 }
@@ -220,8 +213,7 @@ input:-webkit-autofill:active  {
 .hide2 {
 	cursor: pointer;
 }
-
-#spasibo_reg, #parol_nesovpadaet, #neverni_pass_log {
+#spasibo_reg, #parol_nesovpadaet, #neverni_pass_log, #nik_nesvoboden {
 	display: none;
 	color: #ffffff;
 	text-align: center;
@@ -239,14 +231,15 @@ input:-webkit-autofill:active  {
 	color: #000000;
 	transition: 1s;
 }
-
 .modal_footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 /*  MODAL--LOGIN--END  */
-
+.modal-content {
+	margin: 150px auto;
+}
 
 /*  HEADER--START  */
 .navbar {
@@ -281,17 +274,29 @@ input:-webkit-autofill:active  {
 }
 .header_input {
 	width: 23%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #528FD5;
+	border-radius: 10px;
+	padding: 5px;
+}
+.header_input i {
+	color: #ffffff;
+	cursor: pointer;
+	margin: 5px;
 }
 .header_input  input {
-	background-color: #A9C7EA;
-	border: 2px solid #000000;
+	background: none;
+	border: none;
+	outline: none;
 	padding: 5px;
 	width: 100%;
-	border-radius: 0.25rem;
 	cursor: pointer;
+	color: #ffffff;
 }
 .header_input input::placeholder {
-	color: #000000;
+	color: #ffffff;
 }
 .offcanvas {
 	background-color: #A9C7EA;
@@ -394,6 +399,38 @@ input:-webkit-autofill:active  {
 	color: #528FD5 !important;
 	transition: 1s;
 }
+.rowsigin {
+	background-image: url(../images/Rectangle-27.webp);
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+}
+.row_sigin {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+}
+.icon_div_sigin {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 17px;
+	border-radius: 10px;
+	padding: 6px 15px;
+	background-color: #528FD5;
+	transition: 1s;
+	color: #ffffff;
+	cursor: pointer;
+}
+.icon_div_sigin i{
+	font-size: 20px;
+	margin-right: 8px;
+}
+.icon_div_sigin p {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 700;
+}
 /*  HEADER--END  */
 
 
@@ -408,7 +445,7 @@ input:-webkit-autofill:active  {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 35px 0px;
+	padding: 25px 0px;
 }
 .row_1div1 {
 	display: flex;

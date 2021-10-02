@@ -718,7 +718,16 @@
 	.row13_div1_header, .row13_div3_header {
 		margin-bottom: 10px;
 	}
-
+	.header_input {
+		width: 35%;
+	}
+	.icon_div_sigin i {
+		font-size: 18px;
+		margin-right: 8px;
+	}
+	.header_input i {
+		font-size: 14px;
+	}
 }
 @media only screen and (max-width: 575px) { 
 	.header_input {
@@ -745,6 +754,27 @@
 	}
 	.li1, .li2, .li3, .li4, .li5, .li6, .li7, .li8 {
 		padding: 12px 0px;
+	}
+	.modal-content  {
+		width: 90%;
+	}
+	.full_name_div, .nik_div, .login_div, .password_div {
+		width: 80%;
+		height: 45px;
+		margin: 7px 0px;
+		padding: 7px 0px;
+	}
+	.btn_sign_in, .registracia {
+		padding: 2px 50px;
+	}
+	.modal-body {
+		padding: 0rem;
+	}
+	.modal_titlep1 {
+		font-size: 17px;;
+	}
+	.modal_titlep2 {
+		font-size: 17px;;
 	}
 }
 @media only screen and (max-width: 505px) { 
@@ -915,10 +945,17 @@
 		font-size: 15px;
 	}
 	.header_input {
-		display: none;
+		width: 50%;
 	}
 	.row_8div {
 		height: 95%;
+	}
+	.icon_div_sigin p {
+		font-size: 14px;
+	}
+	.icon_div_sigin i {
+		font-size: 16px;
+		margin-right: 5px;
 	}
 }
 @media only screen and (max-width: 380px) { 
@@ -1037,5 +1074,27 @@
 	}
 	.row_1div1 p {
 		font-size: 15px;
+	}
+	.header_input i {
+		font-size: 13px;
+	}
+	.icon_div_sigin i {
+		font-size: 15px;
+	}
+	.icon_div_sigin p {
+		font-size: 13px;
+	}
+	.full_name_div, .nik_div, .login_div, .password_div {
+		height: 41px;
+		margin: 3px 0px;
+	}
+	.inputs_div_reg i {
+		font-size: 15px;
+	}
+	.inputs_div_reg input::placeholder {
+		font-size: 14px;
+	}
+	.inputs_div_reg {
+		margin: 0px 0px 20px 0px;
 	}
 }

@@ -8,7 +8,7 @@ setInterval(function() {
 	if(counter > 4) {
 		counter = 1;
 	}
-}, 5000);
+}, 4000);
 
 
 $('.slider_akcia').slick({
@@ -156,8 +156,10 @@ if(eye_span && password_input_log) {
 
 
 //  Loin Registracia  //
-let sigin = document.getElementById('sigin');
-let sigin_nik = document.getElementById('sigin_nik');
+let sigin_navbar = document.getElementById('sigin_navbar');
+let sigin_nik_navbar = document.getElementById('sigin_nik_navbar');
+let sigin_header = document.getElementById('sigin_header');
+let sigin_nik_header = document.getElementById('sigin_nik_header');
 
 let login_input_log = document.getElementById('login_input_log');
 let password_input_logg = document.getElementById('password_input_log');
@@ -173,7 +175,9 @@ let password_povtor_input_reg = document.getElementById('password_povtor_input_r
 
 let spasibo_reg = document.getElementById('spasibo_reg');
 let parol_nesovpadaet = document.getElementById('parol_nesovpadaet');
+let nik_nesvoboden = document.getElementById('nik_nesvoboden');
 let neverni_pass_log = document.getElementById('neverni_pass_log');
+
 
 registracia_btn.addEventListener('click', function() {
 	register = {
@@ -184,17 +188,44 @@ registracia_btn.addEventListener('click', function() {
 		'passwordRepeat' : password_povtor_input_reg.value
 	}
 
+
 		let i = localStorage.length;
-		if(i <= localStorage.length) {
+		if((i <= localStorage.length) && (password_input_reg.value === password_povtor_input_reg.value)) {
+			for(let n = 0; n <= localStorage.length; n++) {
+			if(localStorage.key(n) !== null) {
+				let getStorage_nik = localStorage.getItem(localStorage.key(n));
+				let getObject_nik = JSON.parse(getStorage_nik);
+				if(register.nik === getObject_nik.nik) {
+					nik_nesvoboden.style.display = 'block';
+					parol_nesovpadaet.style.display = 'none';
+					spasibo_reg.style.display = 'none';
+
+					full_name_input_reg.value = '';
+					nik_input_reg.value = '';
+					login_input_reg.value = '';
+					password_input_reg.value = '';
+					password_povtor_input_reg.value = '';
+					return false;
+	
+				}
+			}		
+			}			
+			
 			let registerString = JSON.stringify(register);
 			localStorage.setItem('test' + i, registerString);
-		}
-		if (password_input_reg.value != password_povtor_input_reg.value){
-			spasibo_reg.style.display = 'none';
-			parol_nesovpadaet.style.display = 'block';
-		}else {
 			spasibo_reg.style.display = 'block';
 			parol_nesovpadaet.style.display = 'none';
+			nik_nesvoboden.style.display = 'none';
+
+			full_name_input_reg.value = '';
+			nik_input_reg.value = '';
+			login_input_reg.value = '';
+			password_input_reg.value = '';
+			password_povtor_input_reg.value = '';
+		}else {
+			parol_nesovpadaet.style.display = 'block';
+			spasibo_reg.style.display = 'none';
+			nik_nesvoboden.style.display = 'none';
 
 			full_name_input_reg.value = '';
 			nik_input_reg.value = '';
@@ -204,6 +235,7 @@ registracia_btn.addEventListener('click', function() {
 		}
 }) 
 
+
 btn_sign_in.addEventListener('click', function() {
 	for(let j = 0;j <= localStorage.length; j++) {
 		if(localStorage.key(j) !== null) {
@@ -211,9 +243,14 @@ btn_sign_in.addEventListener('click', function() {
 			let getObject = JSON.parse(getStorage);
 			if((login_input_log.value === getObject.login) && (password_input_logg.value === getObject.password)) {
 				neverni_pass_log.style.display = 'none';
-				sigin.style.display = 'none';
-				sigin_nik.innerHTML = getObject.nik;
-				sigin_nik.style.display = 'block';
+				sigin_navbar.style.display = 'none';
+				sigin_nik_navbar.innerHTML = getObject.nik;
+				sigin_nik_navbar.style.display = 'block';
+				sigin_header.style.display = 'none';
+				sigin_nik_header.innerHTML = getObject.nik;
+				sigin_nik_header.style.display = 'block';
+
+				$('#modalLogin').modal('hide');
 				break;
 			}
 			
