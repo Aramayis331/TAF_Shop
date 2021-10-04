@@ -114,7 +114,7 @@
 									<p id="neverni_pass_log">Неверный логин или пароль.</p>
 								</div>
 								<div class="modal-body">
-									<form>
+									<form action="#" method="GET">
 										<div class="inputs_div_log">
 											<div class="login_div">
 												<i class="fas fa-user icon_sigin"></i>
@@ -133,11 +133,11 @@
 											<input type="checkbox" maxlength="25" class="input_checkbox" id="zapomnit_checkbox" name="zapomnit_signin">
 											<label class="chechbox_label" for="zapomnit_checkbox"><p class="text_zapomnit">Запомнить</p></label>
 										</div>
+										<div class="modal_footer">
+											<button type="button" id="btn_sign_in" class="btn_sign_in">Войти</button>
+										</div>
 									</form>
 								</div>
-									<div class="modal_footer">
-											<button type="submit" id="btn_sign_in" class="btn_sign_in">Войти</button>
-									</div>
 							</div>
 						</div>
 					</div>
@@ -156,9 +156,10 @@
 								<p id="spasibo_reg">Спасибо за регистрацию.Попробуйте войти сейчас.</p>
 								<p id="parol_nesovpadaet">Пароль не совпадает с повторным вводом пароля.</p>
 								<p id="nik_nesvoboden">Уже есть такой никнейм</p>
+								<p id="test" class="test"></p>
 							</div>
 							<div class="modal-body">
-								<form>
+								<form action="#" method="GET">
 									<div class="inputs_div_reg">
 										<div class="full_name_div">
 											<i class="fas fa-user icon_sigin"></i>
@@ -189,10 +190,10 @@
 											</span>
 										</div>
 									</div>
+									<div class="modal_footer">
+										<button type="submit" id="registracia_btn" class="registracia">Зарегистироваться</button>
+									</div>
 								</form>
-							</div>
-							<div class="modal_footer">
-								<button type="submit" id="registracia_btn" class="registracia">Зарегистироваться</button>
 							</div>
 						</div>
 					</div>

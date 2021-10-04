@@ -8,7 +8,7 @@ setInterval(function() {
 	if(counter > 4) {
 		counter = 1;
 	}
-}, 4000);
+}, 5000);
 
 
 $('.slider_akcia').slick({
@@ -190,7 +190,7 @@ registracia_btn.addEventListener('click', function() {
 
 
 		let i = localStorage.length;
-		if((i <= localStorage.length) && (password_input_reg.value === password_povtor_input_reg.value)) {
+		if((i <= localStorage.length) && (password_input_reg.value === password_povtor_input_reg.value) ) {
 			for(let n = 0; n <= localStorage.length; n++) {
 			if(localStorage.key(n) !== null) {
 				let getStorage_nik = localStorage.getItem(localStorage.key(n));
@@ -206,7 +206,6 @@ registracia_btn.addEventListener('click', function() {
 					password_input_reg.value = '';
 					password_povtor_input_reg.value = '';
 					return false;
-	
 				}
 			}		
 			}			
