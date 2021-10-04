@@ -213,8 +213,7 @@ input:-webkit-autofill:active  {
 .hide2 {
 	cursor: pointer;
 }
-#spasibo_reg, #parol_nesovpadaet, #neverni_pass_log, #nik_nesvoboden {
-	display: none;
+.eror_text_reg, .eror_text_log {
 	color: #ffffff;
 	text-align: center;
 	cursor: pointer;

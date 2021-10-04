@@ -156,8 +156,6 @@ if(eye_span && password_input_log) {
 
 
 //  Loin Registracia  //
-let sigin_navbar = document.getElementById('sigin_navbar');
-let sigin_nik_navbar = document.getElementById('sigin_nik_navbar');
 let sigin_header = document.getElementById('sigin_header');
 let sigin_nik_header = document.getElementById('sigin_nik_header');
 
@@ -173,11 +171,6 @@ let login_input_reg = document.getElementById('login_input_reg');
 let password_input_reg = document.getElementById('password_input_reg');
 let password_povtor_input_reg = document.getElementById('password_povtor_input_reg');
 
-let spasibo_reg = document.getElementById('spasibo_reg');
-let parol_nesovpadaet = document.getElementById('parol_nesovpadaet');
-let nik_nesvoboden = document.getElementById('nik_nesvoboden');
-let neverni_pass_log = document.getElementById('neverni_pass_log');
-
 
 registracia_btn.addEventListener('click', function() {
 	register = {
@@ -188,50 +181,36 @@ registracia_btn.addEventListener('click', function() {
 		'passwordRepeat' : password_povtor_input_reg.value
 	}
 
-
-		let i = localStorage.length;
-		if((i <= localStorage.length) && (password_input_reg.value === password_povtor_input_reg.value) ) {
-			for(let n = 0; n <= localStorage.length; n++) {
+	let i = localStorage.length;
+	if((i <= localStorage.length) && (password_input_reg.value === password_povtor_input_reg.value)) {
+		for(let n = 0; n <= localStorage.length; n++) {
 			if(localStorage.key(n) !== null) {
 				let getStorage_nik = localStorage.getItem(localStorage.key(n));
 				let getObject_nik = JSON.parse(getStorage_nik);
 				if(register.nik === getObject_nik.nik) {
-					nik_nesvoboden.style.display = 'block';
-					parol_nesovpadaet.style.display = 'none';
-					spasibo_reg.style.display = 'none';
-
-					full_name_input_reg.value = '';
-					nik_input_reg.value = '';
-					login_input_reg.value = '';
-					password_input_reg.value = '';
-					password_povtor_input_reg.value = '';
-					return false;
+					document.getElementById('eror_text_reg').innerHTML = 'Уже есть такой никнейм';
+					return;
 				}
 			}		
-			}			
-			
+		}			
+		
+		if(full_name_input_reg.value !== '' && nik_input_reg.value !== '' && login_input_reg.value !== '' && password_input_reg.value !== '' && password_povtor_input_reg.value !== '') {
 			let registerString = JSON.stringify(register);
 			localStorage.setItem('test' + i, registerString);
-			spasibo_reg.style.display = 'block';
-			parol_nesovpadaet.style.display = 'none';
-			nik_nesvoboden.style.display = 'none';
-
-			full_name_input_reg.value = '';
-			nik_input_reg.value = '';
-			login_input_reg.value = '';
-			password_input_reg.value = '';
-			password_povtor_input_reg.value = '';
-		}else {
-			parol_nesovpadaet.style.display = 'block';
-			spasibo_reg.style.display = 'none';
-			nik_nesvoboden.style.display = 'none';
-
+			document.getElementById('eror_text_reg').innerHTML = 'Спасибо за регистрацию.Попробуйте войти сейчас.';
+			
 			full_name_input_reg.value = '';
 			nik_input_reg.value = '';
 			login_input_reg.value = '';
 			password_input_reg.value = '';
 			password_povtor_input_reg.value = '';
 		}
+		else {
+			document.getElementById('eror_text_reg').innerHTML = 'Пустые поля';
+		}
+	}else {
+		document.getElementById('eror_text_reg').innerHTML = 'Пароль не совпадает с повторным вводом пароля.';
+	}
 }) 
 
 
@@ -241,10 +220,7 @@ btn_sign_in.addEventListener('click', function() {
 			let getStorage = localStorage.getItem(localStorage.key(j))
 			let getObject = JSON.parse(getStorage);
 			if((login_input_log.value === getObject.login) && (password_input_logg.value === getObject.password)) {
-				neverni_pass_log.style.display = 'none';
-				sigin_navbar.style.display = 'none';
-				sigin_nik_navbar.innerHTML = getObject.nik;
-				sigin_nik_navbar.style.display = 'block';
+				document.getElementById('sigin_navbar').innerHTML = getObject.nik;
 				sigin_header.style.display = 'none';
 				sigin_nik_header.innerHTML = getObject.nik;
 				sigin_nik_header.style.display = 'block';
@@ -255,7 +231,7 @@ btn_sign_in.addEventListener('click', function() {
 			
 		}
 		else {
-			neverni_pass_log.style.display = 'block'
+			document.getElementById('eror_text_log').innerHTML = 'Неверный логин или пароль.';
 			login_input_log.value = '';
 			password_input_logg.value = '';
 			break;

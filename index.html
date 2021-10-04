@@ -26,7 +26,6 @@
 				<div class="icon_user">
 					<i class="fas fa-user"></i>
 					<p class="icon_user_p" id="sigin_navbar">Ник Профила</p>
-					<p id="sigin_nik_navbar"></p>
 				</div>
 			<div class="btn_close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
 				<i class="fas fa-times"></i>
@@ -111,7 +110,7 @@
 									<p class="modal_titlep2" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#modalRegistr">Регистрация</p>
 								</div>
 								<div id="div_spasibo_log">
-									<p id="neverni_pass_log">Неверный логин или пароль.</p>
+									<p id="eror_text_log" class="eror_text_log"></p>
 								</div>
 								<div class="modal-body">
 									<form action="#" method="GET">
@@ -153,10 +152,7 @@
 								<p class="modal_titlep2" data-bs-toggle="modal">Регистрация</p>
 							</div>
 							<div id="div_spasibo_reg">
-								<p id="spasibo_reg">Спасибо за регистрацию.Попробуйте войти сейчас.</p>
-								<p id="parol_nesovpadaet">Пароль не совпадает с повторным вводом пароля.</p>
-								<p id="nik_nesvoboden">Уже есть такой никнейм</p>
-								<p id="test" class="test"></p>
+								<p id="eror_text_reg" class="eror_text_reg"></p>
 							</div>
 							<div class="modal-body">
 								<form action="#" method="GET">
@@ -191,7 +187,7 @@
 										</div>
 									</div>
 									<div class="modal_footer">
-										<button type="submit" id="registracia_btn" class="registracia">Зарегистироваться</button>
+										<button type="button" id="registracia_btn" class="registracia">Зарегистироваться</button>
 									</div>
 								</form>
 							</div>
