@@ -213,6 +213,9 @@
 	}
 }
 @media only screen and (max-width: 776px) {
+	.modal-content {
+		margin: 0 auto;
+	}
 	.slick-next {
 		top: -88px !important;
 	}
@@ -786,6 +789,9 @@
 	}
 }
 @media only screen and (max-width: 480px) { 
+	.eror_text_reg, .eror_text_log {
+		font-size: 11px;
+	}
 	.slide_akcia {
 		margin: 0 30px 0 30px;
 	}

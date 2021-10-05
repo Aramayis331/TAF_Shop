@@ -430,6 +430,30 @@ input:-webkit-autofill:active  {
 	font-size: 16px;
 	font-weight: 700;
 }
+#icon_sigin_nik {
+	display: none;
+}
+.icon_div_sigin_nik {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 17px;
+	border-radius: 10px;
+	padding: 6px 15px;
+	background-color: #528FD5;
+	transition: 1s;
+	color: #ffffff;
+	cursor: pointer;
+}
+.icon_div_sigin_nik i{
+	font-size: 20px;
+	margin-right: 8px;
+}
+.icon_div_sigin_nik p {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 700;
+}
 /*  HEADER--END  */
 
 

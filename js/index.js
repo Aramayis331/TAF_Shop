@@ -156,9 +156,6 @@ if(eye_span && password_input_log) {
 
 
 //  Loin Registracia  //
-let sigin_header = document.getElementById('sigin_header');
-let sigin_nik_header = document.getElementById('sigin_nik_header');
-
 let login_input_log = document.getElementById('login_input_log');
 let password_input_logg = document.getElementById('password_input_log');
 
@@ -221,9 +218,9 @@ btn_sign_in.addEventListener('click', function() {
 			let getObject = JSON.parse(getStorage);
 			if((login_input_log.value === getObject.login) && (password_input_logg.value === getObject.password)) {
 				document.getElementById('sigin_navbar').innerHTML = getObject.nik;
-				sigin_header.style.display = 'none';
-				sigin_nik_header.innerHTML = getObject.nik;
-				sigin_nik_header.style.display = 'block';
+				document.getElementById('icon_div_sigin').style.display = 'none';
+				document.getElementById('sigin_nik_header').innerHTML = getObject.nik;
+				document.getElementById('icon_sigin_nik').style.display = 'block';
 
 				$('#modalLogin').modal('hide');
 				break;
