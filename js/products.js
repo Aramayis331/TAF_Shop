@@ -127,6 +127,12 @@ let massivProductSliderBuy = [
 		name : 'Киви',
 		price : '40',
 		img : '../images/slider_akcia3.webp'
+	},
+	{
+		id : 'el7',
+		name : 'Киви',
+		price : '40',
+		img : '../images/slider_akcia1.webp'
 	}
 ]
 
