@@ -808,7 +808,7 @@ input:-webkit-autofill:active  {
 .header_slider_akcia i:hover {
 	color: red;
 }
-.articl_slider_akcia img {
+.articl_slider_akcia_img {
 	width: 100%;
 }
 .articl_p1 {
@@ -875,7 +875,7 @@ input:-webkit-autofill:active  {
 	cursor: pointer;
 	font-weight: 700;
 }
-.footer_slider_akcia button {
+.btn_footer_slider_akcia {
 	background-color: #04B500;
 	color: #ffffff;
 	border-radius: 5px;
