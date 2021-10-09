@@ -5,37 +5,37 @@ let massivProductSliderAkcia = [
 		desc2 : 'Мідії мариновані в олії з лимоном',
 		price : '189. UAH',
 		discountprice : '243 UAH',
-		img : '../images/slider_akcia1.webp'
+		img : 'images/slider_akcia1.webp'
 	},
 	{
 		id : 'el2',
 		name : 'Помидор',
 		price : '20',
-		img : '../images/slider_akcia2.webp'
+		img : 'images/slider_akcia2.webp'
 	},
 	{
 		id : 'el3',
 		name : 'Ананас',
 		price : '30',
-		img : '../images/slider_akcia3.webp'
+		img : 'images/slider_akcia3.webp'
 	},
 	{
 		id : 'el4',
 		name : 'Киви',
 		price : '40',
-		img : '../images/slider_akcia4.webp'
+		img : 'images/slider_akcia4.webp'
 	},
 	{
 		id : 'el5',
 		name : 'Киви',
 		price : '40',
-		img : '../images/slider_akcia2.webp'
+		img : 'images/slider_akcia2.webp'
 	},
 	{
 		id : 'el6',
 		name : 'Киви',
 		price : '40',
-		img : '../images/slider_akcia2.webp'
+		img : 'images/slider_akcia2.webp'
 	}
 ]
 
@@ -96,43 +96,43 @@ let massivProductSliderBuy = [
 		desc2 : 'Мідії мариновані в олії з лимоном',
 		price : '189. UAH',
 		discountprice : '243 UAH',
-		img : '../images/slider_akcia2.webp'
+		img : 'images/slider_akcia2.webp'
 	},
 	{
 		id : 'el2',
 		name : 'Помидор',
 		price : '20',
-		img : '../images/slider_akcia4.webp'
+		img : 'images/slider_akcia4.webp'
 	},
 	{
 		id : 'el3',
 		name : 'Ананас',
 		price : '30',
-		img : '../images/slider_akcia1.webp'
+		img : 'images/slider_akcia1.webp'
 	},
 	{
 		id : 'el4',
 		name : 'Киви',
 		price : '40',
-		img : '../images/slider_akcia4.webp'
+		img : 'images/slider_akcia4.webp'
 	},
 	{
 		id : 'el5',
 		name : 'Киви',
 		price : '40',
-		img : '../images/slider_akcia2.webp'
+		img : 'images/slider_akcia2.webp'
 	},
 	{
 		id : 'el6',
 		name : 'Киви',
 		price : '40',
-		img : '../images/slider_akcia3.webp'
+		img : 'images/slider_akcia3.webp'
 	},
 	{
 		id : 'el7',
 		name : 'Киви',
 		price : '40',
-		img : '../images/slider_akcia1.webp'
+		img : 'images/slider_akcia1.webp'
 	}
 ]
 
