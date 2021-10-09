@@ -185,3 +185,88 @@ massivProductSliderBuy.forEach(({id, name, price, img }) => {
 
 	document.getElementById('slider_buy').innerHTML = htmlCatalogSliderBuy;
 });
+
+$('.slider_akcia').slick({
+	infinite: false,
+	speed: 500,
+	arrows: true,
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	responsive: [
+	{
+		breakpoint: 1024,
+		settings: {
+			arrows: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+		}
+	},
+	{
+		breakpoint: 992,
+		settings: {
+			arrows: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+		}
+	},
+	{
+		breakpoint: 768,
+		settings: {
+			arrows: true,
+			slidesToShow: 2,
+			slidesToScroll: 1,
+		}
+	},
+	{
+		breakpoint: 481,
+		settings: {
+			arrows: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+		}
+	}
+	]
+});
+
+
+$('.slider_buy').slick({
+	infinite: false,
+	speed: 500,
+	arrows: true,
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	responsive: [
+	{
+		breakpoint: 1024,
+		settings: {
+			arrows: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+		}
+	},
+	{
+		breakpoint: 992,
+		settings: {
+			arrows: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+		}
+	},
+	{
+		breakpoint: 768,
+		settings: {
+			arrows: true,
+			slidesToShow: 2,
+			slidesToScroll: 1,
+		}
+	},
+	{
+		breakpoint: 481,
+		settings: {
+			arrows: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+		}
+	}
+	]
+});
