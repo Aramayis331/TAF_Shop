@@ -583,6 +583,9 @@ input:-webkit-autofill:active  {
 	border-radius: 10px;
 	cursor: pointer;
 }
+.a_korzina {
+	color: #000000;
+}
 /*  row_1--END  */
 
 
@@ -875,6 +878,13 @@ input:-webkit-autofill:active  {
 	cursor: pointer;
 	font-weight: 700;
 }
+/* .div_btn_kupit {
+	background-color: #04B500;
+	color: #ffffff;
+	border-radius: 5px;
+	border: none;
+	padding: 5px 20px;
+} */
 .btn_footer_slider_akcia {
 	background-color: #04B500;
 	color: #ffffff;
@@ -886,6 +896,7 @@ input:-webkit-autofill:active  {
 
 
 /*  row_6--START  */
+
 .row_6div1 {
 	margin-bottom: 20px;
 	display: flex;
@@ -1295,3 +1306,8 @@ font-weight: 600;
 	display: none;
 }
 /*  row_13--END  */
+
+.products_element_btn_active {
+	color: #ffffff; 
+	background-color: red;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/korzina.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../adaptacia/aindex.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<title>SHOP</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar header">
+			<div class="header_logo">
+				<img src="../images/header_logo.webp" alt="no photo">
+			</div>
+		<button class="navbar-toggler div_icon_navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+			<div class="icon_navbar"><i class="fas fa-bars"></i></div>
+		</button>
+		<div class="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<div class="icon_user">
+					<i class="fas fa-user"></i>
+					<p class="icon_user_p" id="sigin_navbar">Ник Профила</p>
+				</div>
+			<div class="btn_close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+				<i class="fas fa-times"></i>
+			</div>
+			</div>
+			<div class="offcanvas-body">
+			<ul class="navbar-nav navbar_nav justify-content-end flex-grow-1 pe-3">
+				<li class="nav-item">
+					<div class="li1">
+						<img src="../images/menu_img1.webp" alt="no photo">
+						<a class="li1_a" href="#">Главная</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li2">
+						<img src="../images/menu_img2.webp" alt="no photo">
+						<a class="li2_a" href="#">Акции</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown dropdown_li">
+						<img src="../images/menu_img3.webp" alt="no photo">
+						<a class="fish_dropdown dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Каталог товаров
+						</a>
+					<ul class="dropdown-menu dropdown_menu" aria-labelledby="offcanvasNavbarDropdown">
+						<li><a class="dropdown_item" href="#">Слабосоленая риба и морепродукты</a></li>
+						<li><a class="dropdown_item" href="#">Рыба холодного копчения</a></li>
+						<li><a class="dropdown_item" href="#">Рыба горячего копчения</a></li>
+						<li><a class="dropdown_item" href="#">Вяленная рыба</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<div class="li3">
+						<img src="../images/menu_img4.webp" alt="no photo">
+						<a class="li3_a" href="#">Доставка и оплата</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li4">
+						<img src="../images/menu_img5.webp" alt="no photo">
+						<a class="li4_a" href="#">Отзывы</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li5">
+						<img src="../images/menu_img6.webp" alt="no photo">
+						<a class="li5_a" href="#">Частые вопросы?</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li6">
+						<img src="../images/menu_img7.webp" alt="no photo">
+						<a class="li6_a" href="#">График работы</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li7">
+						<img src="../images/menu_img8.webp" alt="no photo">
+						<a class="li7_a" href="#">Контакты</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li8">
+						<img src="../images/menu_img9.webp" alt="no photo">
+						<a class="li8_a" href="#">О нас</a>
+					</div>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="row header_korzina">
+		<div class="col-5">
+			<div class="header_products">
+				<p>Продукты</p>
+			</div>
+		</div>
+		<div class="col-2">
+			<div class="header_price">
+				<p>Цена</p>
+			</div>
+		</div>
+		<div class="col-2">
+			<div class="header_count">
+				<p>Количество</p>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="header_total">
+				<p>Общий</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="products_korzina"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<script src="../js/korzina.js"></script>
+</body>
+</html>

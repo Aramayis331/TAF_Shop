@@ -1,56 +1,93 @@
 let massivProductSliderAkcia = [
 	{	
-		id : 'el1',
-		desc1 : 'Есть в наличии',
-		desc2 : 'Мідії мариновані в олії з лимоном',
-		price : '189. UAH',
-		discountprice : '243 UAH',
+		name : 'fish 1',
+		priceTotal : '200',
+		priceSkidka : '-20%',
+		priceMinus : '-40',
+		price : '160',
 		img : 'images/slider_akcia1.webp'
 	},
 	{
-		id : 'el2',
-		name : 'Помидор',
-		price : '20',
+		name : 'fish 2',
+		priceTotal : '100',
+		priceSkidka : '-30%',
+		priceMinus : '-30',
+		price : '70',
 		img : 'images/slider_akcia2.webp'
 	},
 	{
-		id : 'el3',
-		name : 'Ананас',
-		price : '30',
+		name : 'fish 3',
+		priceTotal : '500',
+		priceSkidka : '-50%',
+		priceMinus : '-250',
+		price : '250',
 		img : 'images/slider_akcia3.webp'
 	},
 	{
-		id : 'el4',
-		name : 'Киви',
-		price : '40',
+		name : 'fish 4',
+		priceTotal : '90',
+		priceSkidka : '-10%',
+		priceMinus : '-9',
+		price : '81',
 		img : 'images/slider_akcia4.webp'
 	},
 	{
-		id : 'el5',
-		name : 'Киви',
-		price : '40',
+		name : 'fish 5',
+		priceTotal : '300',
+		priceSkidka : '-45%',
+		priceMinus : '-135',
+		price : '165',
 		img : 'images/slider_akcia2.webp'
 	},
 	{
-		id : 'el6',
-		name : 'Киви',
-		price : '40',
+		name : 'fish 6',
+		priceTotal : '220',
+		priceSkidka : '-60%',
+		priceMinus : '-132',
+		price : '88',
 		img : 'images/slider_akcia2.webp'
 	}
 ]
 
-let htmlCatalogSliderAkcia = '';
+getLocalStorage = () => {
+	let productsLocalStorage = localStorage.getItem('products');
+	if(productsLocalStorage !== null) {
+		return JSON.parse(productsLocalStorage);
+	}
+	else {
+		return [];
+	}
+}
 
-massivProductSliderAkcia.forEach(({id, name, price, img }) => {
-	
+let htmlCatalogSliderAkcia = '';
+let classNameActive = 'products_element_btn_active';
+let textNameActive = 'Убрать';
+let textNameKupit = 'Купить';
+
+
+massivProductSliderAkcia.forEach(({img, name, price, priceTotal, priceSkidka, priceMinus}) => {
+	let activClass = '';
+	let activText = '';
+	let objectProductsStore = getLocalStorage();
+
+	if(objectProductsStore.indexOf(name) === -1) {
+		activClass = ' ';
+		activText = textNameKupit;
+	}else {
+		activClass = ' ' + classNameActive;
+		activText = textNameActive;
+	}
+
+
+
 	htmlCatalogSliderAkcia += `
 	
 		<div class="sliders">
 			<div class="slide_akcia">
 				<div class="header_slider_akcia">
 					<div class="cena_procent">
-						<p class="grn">-53 грн</p>
-						<p class="procent">-20%</p> 
+						<p class="grn">${priceMinus} руб</p>
+						<p class="procent">${priceSkidka}</p> 
 					</div>
 						<i class="fas fa-heart"></i>
 				</div>
@@ -76,10 +113,12 @@ massivProductSliderAkcia.forEach(({id, name, price, img }) => {
 				</div>
 				<div class="footer_slider_akcia">
 					<div class="cena_producta_div">
-						<p class="cena_product">243 UAH</p>
-						<p class="skidka_product">189.9 UAH</p>
+						<p class="cena_product">${priceTotal} руб</p>
+						<p class="skidka_product">${price} руб</p>
 					</div>
-					<button class="btn_footer_slider_akcia" type="submit">Купить</button>
+					<div class="div_btn_kupit">
+						<button class="btn_footer_slider_akcia${activClass}" type="submit">${activText}</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -91,54 +130,32 @@ massivProductSliderAkcia.forEach(({id, name, price, img }) => {
 
 let massivProductSliderBuy = [
 	{	
-		id : 'el1',
-		desc1 : 'Есть в наличии',
-		desc2 : 'Мідії мариновані в олії з лимоном',
-		price : '189. UAH',
-		discountprice : '243 UAH',
 		img : 'images/slider_akcia2.webp'
 	},
 	{
-		id : 'el2',
-		name : 'Помидор',
-		price : '20',
 		img : 'images/slider_akcia4.webp'
 	},
 	{
-		id : 'el3',
-		name : 'Ананас',
-		price : '30',
 		img : 'images/slider_akcia1.webp'
 	},
 	{
-		id : 'el4',
-		name : 'Киви',
-		price : '40',
 		img : 'images/slider_akcia4.webp'
 	},
 	{
-		id : 'el5',
-		name : 'Киви',
-		price : '40',
 		img : 'images/slider_akcia2.webp'
 	},
 	{
-		id : 'el6',
-		name : 'Киви',
-		price : '40',
 		img : 'images/slider_akcia3.webp'
 	},
 	{
-		id : 'el7',
-		name : 'Киви',
-		price : '40',
 		img : 'images/slider_akcia1.webp'
 	}
 ]
 
+
 let htmlCatalogSliderBuy = '';
 
-massivProductSliderBuy.forEach(({id, name, price, img }) => {
+massivProductSliderBuy.forEach(({img}) => {
 	
 	htmlCatalogSliderBuy += `
 	
@@ -176,7 +193,9 @@ massivProductSliderBuy.forEach(({id, name, price, img }) => {
 						<p class="cena_product">243 UAH</p>
 						<p class="skidka_product">189.9 UAH</p>
 					</div>
-					<button class="btn_footer_slider_akcia" type="submit">Купить</button>
+					<div class="div_btn_kupit">
+						<button class="btn_footer_slider_akcia" type="submit">Купить</button>
+					</div>
 				</div>
 			</div>
 		</div>

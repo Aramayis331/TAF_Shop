@@ -1,0 +1,85 @@
+.header_products, .header_price, .header_count, .header_total {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.header_products p, .header_price p, .header_count p, .header_total p { 
+	margin: 0;
+	cursor: pointer;
+	color: #528FD5;
+	font-size: 22px;
+	font-weight: 700;
+}
+.header_korzina {
+	border-bottom: 1px solid #528FD5;
+}
+.container_korzina {
+	border-bottom: 1px solid #528FD5;
+}
+.div_products_img_name i {
+	font-size: 27px;
+	cursor: pointer;
+}
+.div_products_img_name {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+}
+.div_products_img_korzina {
+	max-width: 150px;
+}
+.products_img_korzina {
+	width: 100%;
+}
+.name_product_korzina {
+	margin: 0;
+	cursor: pointer;
+	color: #528FD5;
+	font-size: 21px;
+	font-weight: 500;
+}
+.price_product_korzina {
+	margin: 0;
+	cursor: pointer;
+	color: #528FD5;
+	font-size: 21px;
+	font-weight: 500;
+}
+.div_products_price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.div_products_count {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+.div_products_count i {
+	font-size: 27px;
+	cursor: pointer;
+}
+.count_product {
+	margin: 0;
+	cursor: pointer;
+	color: #528FD5;
+	font-size: 21px;
+	font-weight: 500;
+}
+.div_products_total {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.total_product {
+	margin: 0;
+	cursor: pointer;
+	color: #528FD5;
+	font-size: 21px;
+	font-weight: 500;
+}
