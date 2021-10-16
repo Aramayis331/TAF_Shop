@@ -1,0 +1,123 @@
+@media only screen and (max-width: 800px) { 
+	.header_products p, .header_price p, .header_count p, .header_total p {
+		font-size: 19px;
+		font-weight: 700;
+	}
+	.div_remove_product i {
+		font-size: 23px;
+	}
+	.div_products_img_korzina {
+		max-width: 108px;
+	}
+	.div_products_count i {
+		font-size: 23px;
+	}
+	.name_product_korzina, .price_product_korzina, .count_product, .total_product {
+		font-size: 19px;
+	}
+}
+@media only screen and (max-width: 650px) {  
+	.header_products p, .header_price p, .header_count p, .header_total p {
+		font-size: 18px;
+		font-weight: 700;
+	}
+	.name_product_korzina, .price_product_korzina, .count_product, .total_product {
+		font-size: 16px;
+		font-weight: 700;
+	}
+	.div_remove_product i {
+		font-size: 20px;
+	}
+	.div_products_count i {
+		font-size: 20px;
+	}
+	.div_products_img_korzina {
+		max-width: 85px;
+	}
+	.header_exit_cart i {
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 548px) { 
+	.header_products p, .header_price p, .header_count p, .header_total p {
+		font-size: 16px;
+	}
+	.name_product_korzina, .price_product_korzina, .count_product, .total_product {
+		font-size: 14px;
+	}
+	.div_remove_product i {
+		font-size: 15px;
+	}
+	.div_products_count i {
+		font-size: 15px;
+	}
+	.div_products_img_korzina {
+		max-width: 72px;
+	}
+	.empty_cart_text {
+			font-size: 25px;
+	}
+}
+@media only screen and (max-width: 481px) { 
+	.header_products p, .header_price p, .header_count p, .header_total p {
+		font-size: 12px;
+	}
+	.name_product_korzina, .price_product_korzina, .count_product, .total_product {
+		font-size: 13px;
+	}
+	.div_remove_product i {
+		font-size: 12px;
+	}
+	.div_products_count i {
+		font-size: 11px;
+	}
+	.div_products_img_korzina {
+		max-width: 63px;
+	}
+	.header_price, .header_count, .header_total, .header_products {
+		padding: 10px;
+	}
+	.header_exit_cart i {
+		font-size: 18px;
+	}
+	.header_logo {
+		width: 70px;
+		height: 70px;
+	}
+	.navbar-toggler {
+		font-size: 1.3rem;
+	}
+	.empty_cart_text {
+		font-size: 20px;
+		font-weight: 500;
+	}
+}
+@media only screen and (max-width: 380px) { 
+	.header_products p, .header_price p, .header_count p, .header_total p {
+		font-size: 11px;
+	}
+	.name_product_korzina, .price_product_korzina, .count_product, .total_product {
+		font-size: 11px;
+		padding: 2px;
+	}
+	.div_products_img_korzina {
+		max-width: 50px;
+	}
+	.header_exit_cart i {
+		font-size: 16px;
+	}
+	.header_price, .header_count, .header_total, .header_products {
+		padding: 0px;
+	}
+	.empty_cart_text {
+		font-size: 20px;
+	}
+	.empty_cart {
+		padding: 30px;
+	}
+}
+@media only screen and (max-width: 350px) { 
+	.header_products p, .header_price p, .header_count p, .header_total p {
+		font-size: 10px;
+	}
+}

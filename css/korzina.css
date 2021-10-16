@@ -1,8 +1,22 @@
-.header_products, .header_price, .header_count, .header_total {
+.header_price, .header_count, .header_total {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
+	height: 100%;
+}
+.header_exit_cart {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.header_products {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	height: 100%;
 }
 .header_products p, .header_price p, .header_count p, .header_total p { 
 	margin: 0;
@@ -17,13 +31,19 @@
 .container_korzina {
 	border-bottom: 1px solid #528FD5;
 }
-.div_products_img_name i {
+.div_remove_product {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.div_remove_product i {
 	font-size: 27px;
 	cursor: pointer;
 }
 .div_products_img_name {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	height: 100%;
 }
@@ -62,6 +82,13 @@
 .div_products_count i {
 	font-size: 27px;
 	cursor: pointer;
+}
+.header_exit_cart i {
+	font-size: 27px;
+	cursor: pointer;
+}
+.header_exit_cart_a {
+	color: #528FD5;
 }
 .count_product {
 	margin: 0;

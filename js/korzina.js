@@ -40,11 +40,13 @@ let containerCart = () => {
 	objectGetLocalStorageCart.map(({img, name, priceTotal, priceProduct, count}) => {
 		containerCart += `
 		<div class="row container_korzina">
+			<div class="col-1">
+				<div class='div_remove_product'><i class="fas fa-times-circle"></i></div>
+			</div>
 			<div class="col-5">
 				<div class='div_products_img_name'>
-					<div class='div_remove_product'><i class="fas fa-times-circle"></i></div>
 					<div class='div_products_img_korzina'>
-						<img class='products_img_korzina' src='${img}'>
+						<img class='products_img_korzina' src='../${img}'>
 					</div>
 					<p class='name_product_korzina'>${name}</p>
 				</div>
@@ -56,12 +58,12 @@ let containerCart = () => {
 			</div>
 			<div class="col-2">
 				<div class='div_products_count'>
-					<div class='arrow_left'><i class="fas fa-chevron-circle-left"></i></div>
+					<div class='arrow_left_cart'><i class="fas fa-chevron-circle-left"></i></div>
 						<p class='count_product'>${count}</p>
-					<div class='arrow_right'><i class="fas fa-chevron-circle-right"></i></div>
+					<div class='arrow_right_cart'><i class="fas fa-chevron-circle-right"></i></div>
 				</div>
 			</div>
-			<div class="col-3">
+			<div class="col-2">
 				<div class='div_products_total'>
 					<p class='total_product'>${priceTotal}</p>
 				</div>
@@ -87,8 +89,8 @@ containerCart();
 
 
 function productInCart() {
-	let arrowLeft = document.querySelectorAll('.arrow_left');
-	let arrowRight = document.querySelectorAll('.arrow_right');
+	let arrowLeft = document.querySelectorAll('.arrow_left_cart');
+	let arrowRight = document.querySelectorAll('.arrow_right_cart');
 	let divRemoveProduct = document.querySelectorAll('.div_remove_product');
 	let productInCart = getLocalStorage();
 
