@@ -1,52 +1,13 @@
-let getLocalStorage = () => {
-	let productsLocalStorage = localStorage.getItem('products');
-	if(productsLocalStorage !== null) {
-		return JSON.parse(productsLocalStorage);
-	}
-	else {
-		return [];
-	}
-}
+import { massivProductSliderAkcia, massivProductSliderBuy, getLocalStorage, setLocalStorage, classNameActive, 
+		textNameActive, textNameKupit} from './module/script.js';
 
-let a = getLocalStorage();
-let setLocalStorage = (id) => {
-	let products = a;
-	let pushProducts = false;
-	a.forEach((el, i) => {
-		if(id.name === el.name) {
-			products.splice(i, 1);
-		}else {
-			// products.push(id);
-		}
-	})
-	localStorage.setItem('products', JSON.stringify(products));
-
-	return {pushProducts, products};
-}
-
-// let setLocalStorage = (id) => {
-// 	let products = a;
-// 	let pushProducts = false;
-// 	let index = products.indexOf(id);
-// 	if(index === -1) {
-// 		products.push(id);
-// 		pushProducts = true;
-// 	}
-// 	else {
-// 		products.splice(index, 1);
-// 	}
-
-// 	localStorage.setItem('products', JSON.stringify(products));
-
-// 	return {pushProducts, products};
-// }
 
 let div_btn_kupit = document.querySelectorAll('.div_btn_kupit');
 let btn_footer_slider_akcia = document.querySelectorAll('.btn_footer_slider_akcia');
 
 div_btn_kupit.forEach((el, i) => {
 	el.addEventListener('click', () => {
-		let {pushProducts, products} = setLocalStorage(massivProductSliderAkcia[i]);
+	let {pushProducts, products} = setLocalStorage(massivProductSliderAkcia[i]);
 		if(pushProducts) {
 			btn_footer_slider_akcia[i].classList.add(classNameActive);
 			btn_footer_slider_akcia[i].innerHTML = textNameActive;
@@ -58,6 +19,7 @@ div_btn_kupit.forEach((el, i) => {
 		countKorzina();
 	});
 })
+
 
 let numberKorzina = document.getElementById('number_basket');
 let countKorzina = () => {
@@ -73,7 +35,7 @@ let containerCart = () => {
 	if(products_korzina) {
 		let getLocalStorageCart = localStorage.getItem('products');
 		let objectGetLocalStorageCart = JSON.parse(getLocalStorageCart);
-		
+
 		let containerCart = '';
 	objectGetLocalStorageCart.map(({img, name, price}) => {
 
@@ -95,9 +57,9 @@ let containerCart = () => {
 			</div>
 			<div class="col-2">
 				<div class='div_products_count'>
-					<i class="fas fa-chevron-circle-left"></i>
+					<div class='arrow_left'><i class="fas fa-chevron-circle-left"></i></div>
 						<p class='count_product'>1</p>
-					<i class="fas fa-chevron-circle-right"></i>
+					<div class='arrow_right'><i class="fas fa-chevron-circle-right"></i></div>
 				</div>
 			</div>
 			<div class="col-3">
@@ -112,3 +74,21 @@ let containerCart = () => {
 	}
 }
 containerCart();
+
+function countProduct() {
+	let countProduct = document.querySelectorAll('.count_product');
+	let arrowLeft = document.querySelectorAll('.arrow_left');
+	let arrowRight = document.querySelectorAll('.arrow_right');
+	let count = 1;
+
+	arrowRight.forEach((el, i) => {
+		el.addEventListener('click', () => {
+			count++;
+			countProduct[i].innerHTML = count;
+		})
+	})
+
+
+
+}
+countProduct();

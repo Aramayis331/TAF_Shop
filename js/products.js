@@ -1,84 +1,26 @@
-let massivProductSliderAkcia = [
-	{	
-		name : 'fish 1',
-		priceTotal : '200',
-		priceSkidka : '-20%',
-		priceMinus : '-40',
-		price : '160',
-		img : 'images/slider_akcia1.webp'
-	},
-	{
-		name : 'fish 2',
-		priceTotal : '100',
-		priceSkidka : '-30%',
-		priceMinus : '-30',
-		price : '70',
-		img : 'images/slider_akcia2.webp'
-	},
-	{
-		name : 'fish 3',
-		priceTotal : '500',
-		priceSkidka : '-50%',
-		priceMinus : '-250',
-		price : '250',
-		img : 'images/slider_akcia3.webp'
-	},
-	{
-		name : 'fish 4',
-		priceTotal : '90',
-		priceSkidka : '-10%',
-		priceMinus : '-9',
-		price : '81',
-		img : 'images/slider_akcia4.webp'
-	},
-	{
-		name : 'fish 5',
-		priceTotal : '300',
-		priceSkidka : '-45%',
-		priceMinus : '-135',
-		price : '165',
-		img : 'images/slider_akcia2.webp'
-	},
-	{
-		name : 'fish 6',
-		priceTotal : '220',
-		priceSkidka : '-60%',
-		priceMinus : '-132',
-		price : '88',
-		img : 'images/slider_akcia2.webp'
-	}
-]
+import {massivProductSliderAkcia, massivProductSliderBuy, getLocalStorage, setLocalStorage, 
+		classNameActive, textNameActive, textNameKupit} from './module/script.js';
 
-getLocalStorage = () => {
-	let productsLocalStorage = localStorage.getItem('products');
-	if(productsLocalStorage !== null) {
-		return JSON.parse(productsLocalStorage);
-	}
-	else {
-		return [];
-	}
-}
 
 let htmlCatalogSliderAkcia = '';
-let classNameActive = 'products_element_btn_active';
-let textNameActive = 'Убрать';
-let textNameKupit = 'Купить';
-
-
-massivProductSliderAkcia.forEach(({img, name, price, priceTotal, priceSkidka, priceMinus}) => {
+massivProductSliderAkcia.forEach((el) => {
 	let activClass = '';
 	let activText = '';
-	let objectProductsStore = getLocalStorage();
+	let activTrue = true;
 
-	if(objectProductsStore.indexOf(name) === -1) {
+	let objectProductsStore = getLocalStorage();
+	for(let k = 0; k < objectProductsStore.length; k++) {
+		if(el.id ===  objectProductsStore[k].id) {
+			activClass = ' ' + classNameActive;
+			activText = textNameActive;
+			activTrue = false;
+		}
+	}
+	if(activTrue === true) {
 		activClass = ' ';
 		activText = textNameKupit;
-	}else {
-		activClass = ' ' + classNameActive;
-		activText = textNameActive;
 	}
-
-
+	
 
 	htmlCatalogSliderAkcia += `
 	
@@ -86,13 +28,13 @@ massivProductSliderAkcia.forEach(({img, name, price, priceTotal, priceSkidka, pr
 			<div class="slide_akcia">
 				<div class="header_slider_akcia">
 					<div class="cena_procent">
-						<p class="grn">${priceMinus} руб</p>
-						<p class="procent">${priceSkidka}</p> 
+						<p class="grn">${el.priceMinus} руб</p>
+						<p class="procent">${el.priceSkidka}</p> 
 					</div>
 						<i class="fas fa-heart"></i>
 				</div>
 				<div class="articl_slider_akcia">
-					<img class="articl_slider_akcia_img" src="${img}" alt="no photo">
+					<img class="articl_slider_akcia_img" src="${el.img}" alt="no photo">
 					<div class="slider_akcia_te">
 						<p class="articl_p1">Есть в наличии</p>
 						<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
@@ -113,8 +55,8 @@ massivProductSliderAkcia.forEach(({img, name, price, priceTotal, priceSkidka, pr
 				</div>
 				<div class="footer_slider_akcia">
 					<div class="cena_producta_div">
-						<p class="cena_product">${priceTotal} руб</p>
-						<p class="skidka_product">${price} руб</p>
+						<p class="cena_product">${el.priceTotal} руб</p>
+						<p class="skidka_product">${el.price} руб</p>
 					</div>
 					<div class="div_btn_kupit">
 						<button class="btn_footer_slider_akcia${activClass}" type="submit">${activText}</button>
@@ -128,33 +70,8 @@ massivProductSliderAkcia.forEach(({img, name, price, priceTotal, priceSkidka, pr
 	document.getElementById('slider_akcia').innerHTML = htmlCatalogSliderAkcia;
 });
 
-let massivProductSliderBuy = [
-	{	
-		img : 'images/slider_akcia2.webp'
-	},
-	{
-		img : 'images/slider_akcia4.webp'
-	},
-	{
-		img : 'images/slider_akcia1.webp'
-	},
-	{
-		img : 'images/slider_akcia4.webp'
-	},
-	{
-		img : 'images/slider_akcia2.webp'
-	},
-	{
-		img : 'images/slider_akcia3.webp'
-	},
-	{
-		img : 'images/slider_akcia1.webp'
-	}
-]
-
 
 let htmlCatalogSliderBuy = '';
-
 massivProductSliderBuy.forEach(({img}) => {
 	
 	htmlCatalogSliderBuy += `
