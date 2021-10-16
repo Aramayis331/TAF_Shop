@@ -55,8 +55,8 @@ massivProductSliderAkcia.forEach((el) => {
 				</div>
 				<div class="footer_slider_akcia">
 					<div class="cena_producta_div">
-						<p class="cena_product">${el.priceTotal} руб</p>
-						<p class="skidka_product">${el.price} руб</p>
+						<p class="cena_product">${el.price} руб</p>
+						<p class="skidka_product">${el.priceProduct} руб</p>
 					</div>
 					<div class="div_btn_kupit">
 						<button class="btn_footer_slider_akcia${activClass}" type="submit">${activText}</button>

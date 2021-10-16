@@ -83,3 +83,15 @@
 	font-size: 21px;
 	font-weight: 500;
 }
+.empty_cart {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+}
+.empty_cart_text {
+	margin: 0;
+	color: #528FD5;
+	font-size: 30px;
+	font-weight: 700;
+}

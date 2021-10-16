@@ -35,15 +35,14 @@ let containerCart = () => {
 	if(products_korzina) {
 		let getLocalStorageCart = localStorage.getItem('products');
 		let objectGetLocalStorageCart = JSON.parse(getLocalStorageCart);
-
-		let containerCart = '';
-	objectGetLocalStorageCart.map(({img, name, price}) => {
-
+	if(objectGetLocalStorageCart.length > 0) {
+	let containerCart = '';
+	objectGetLocalStorageCart.map(({img, name, priceTotal, priceProduct, count}) => {
 		containerCart += `
 		<div class="row container_korzina">
 			<div class="col-5">
 				<div class='div_products_img_name'>
-					<i class="fas fa-times-circle"></i>
+					<div class='div_remove_product'><i class="fas fa-times-circle"></i></div>
 					<div class='div_products_img_korzina'>
 						<img class='products_img_korzina' src='${img}'>
 					</div>
@@ -52,43 +51,80 @@ let containerCart = () => {
 			</div>
 			<div class="col-2">
 					<div class='div_products_price'>
-						<p class='price_product_korzina'>${price}</p>
+						<p class='price_product_korzina'>${priceProduct}</p>
 					</div>
 			</div>
 			<div class="col-2">
 				<div class='div_products_count'>
 					<div class='arrow_left'><i class="fas fa-chevron-circle-left"></i></div>
-						<p class='count_product'>1</p>
+						<p class='count_product'>${count}</p>
 					<div class='arrow_right'><i class="fas fa-chevron-circle-right"></i></div>
 				</div>
 			</div>
 			<div class="col-3">
 				<div class='div_products_total'>
-					<p class='total_product'>0</p>
+					<p class='total_product'>${priceTotal}</p>
 				</div>
 			</div>
 		</div>
 		`;
 		products_korzina.innerHTML = containerCart;
-	})	
+	})
 	}
+	else {
+		containerCart = `
+			<div class='empty_cart'>
+				<p class='empty_cart_text'>Ваша корзина пуста</p>
+			</div>
+		`
+		products_korzina.innerHTML = containerCart;
+	}
+	}
+	productInCart();
 }
 containerCart();
 
-function countProduct() {
-	let countProduct = document.querySelectorAll('.count_product');
+
+
+function productInCart() {
 	let arrowLeft = document.querySelectorAll('.arrow_left');
 	let arrowRight = document.querySelectorAll('.arrow_right');
-	let count = 1;
+	let divRemoveProduct = document.querySelectorAll('.div_remove_product');
+	let productInCart = getLocalStorage();
 
 	arrowRight.forEach((el, i) => {
 		el.addEventListener('click', () => {
-			count++;
-			countProduct[i].innerHTML = count;
+			if(arrowRight) {
+				productInCart[i].count += 1;
+				productInCart[i].priceTotal = productInCart[i].priceProduct * productInCart[i].count;
+			}
+			localStorage.setItem('products', JSON.stringify(productInCart));
+			containerCart();
 		})
 	})
-
-
-
+	arrowLeft.forEach((el, i) => {
+		el.addEventListener('click', () => {
+			if(arrowLeft && (productInCart[i].count > 1)) {
+				productInCart[i].count -= 1;
+				productInCart[i].priceTotal = productInCart[i].priceProduct * productInCart[i].count;
+			}
+			else {
+				productInCart.splice(i, 1);
+			}
+			localStorage.setItem('products', JSON.stringify(productInCart));
+			containerCart();
+		})
+	})
+	divRemoveProduct.forEach((el, i) => {
+		el.addEventListener('click', () => {
+			productInCart.splice(i, 1);
+			
+			localStorage.setItem('products', JSON.stringify(productInCart));
+			containerCart();
+			
+		})
+	})
+	
 }
-countProduct();
+
+productInCart();
