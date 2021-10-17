@@ -126,7 +126,6 @@ registracia_btn.addEventListener('click', function() {
 	}
 }) 
 
-
 btn_sign_in.addEventListener('click', function() {
 	for(let j = 0;j <= localStorage.length; j++) {
 		if(localStorage.key(j) !== null) {
@@ -151,7 +150,6 @@ btn_sign_in.addEventListener('click', function() {
 		}
 	}
 })
-
 
 let myModal1 = new bootstrap.Modal(document.getElementById('modalLogin'), {
 	keyboard: false,

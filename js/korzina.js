@@ -8,6 +8,7 @@ let btn_footer_slider_akcia = document.querySelectorAll('.btn_footer_slider_akci
 div_btn_kupit.forEach((el, i) => {
 	el.addEventListener('click', () => {
 	let {pushProducts, products} = setLocalStorage(massivProductSliderAkcia[i]);
+
 		if(pushProducts) {
 			btn_footer_slider_akcia[i].classList.add(classNameActive);
 			btn_footer_slider_akcia[i].innerHTML = textNameActive;
@@ -18,6 +19,25 @@ div_btn_kupit.forEach((el, i) => {
 		}
 		countKorzina();
 	});
+});
+
+let div_btn_kupit_buy = document.querySelectorAll('.div_btn_kupit_buy');
+let btn_footer_slider_buy = document.querySelectorAll('.btn_footer_slider_buy');
+
+div_btn_kupit_buy.forEach((el, i) => {
+	el.addEventListener('click', () => {
+		let {pushProducts, products} = setLocalStorage(massivProductSliderBuy[i]);
+		
+		if(pushProducts) {
+			btn_footer_slider_buy[i].classList.add(classNameActive);
+			btn_footer_slider_buy[i].innerHTML = textNameActive;
+			textNameActive;
+		} else {
+			btn_footer_slider_buy[i].classList.remove(classNameActive);
+			btn_footer_slider_buy[i].innerHTML = textNameKupit;
+		}
+		countKorzina();
+	})
 })
 
 
@@ -33,15 +53,14 @@ countKorzina();
 let products_korzina = document.getElementById('products_korzina')
 let containerCart = () => {
 	if(products_korzina) {
-		let getLocalStorageCart = localStorage.getItem('products');
-		let objectGetLocalStorageCart = JSON.parse(getLocalStorageCart);
+	let objectGetLocalStorageCart = getLocalStorage();
 	if(objectGetLocalStorageCart.length > 0) {
 	let containerCart = '';
 	objectGetLocalStorageCart.map(({img, name, priceTotal, priceProduct, count}) => {
 		containerCart += `
 		<div class="row container_korzina">
 			<div class="col-1">
-				<div class='div_remove_product'><i class="fas fa-times-circle"></i></div>
+				<div class='div_remove_product'><i class="fas fa-times-circle icon_remove_product"></i></div>
 			</div>
 			<div class="col-5">
 				<div class='div_products_img_name'>
@@ -53,7 +72,7 @@ let containerCart = () => {
 			</div>
 			<div class="col-2">
 					<div class='div_products_price'>
-						<p class='price_product_korzina'>${priceProduct}</p>
+						<p class='price_product_korzina'>${priceProduct}руб</p>
 					</div>
 			</div>
 			<div class="col-2">
@@ -65,7 +84,7 @@ let containerCart = () => {
 			</div>
 			<div class="col-2">
 				<div class='div_products_total'>
-					<p class='total_product'>${priceTotal}</p>
+					<p class='total_product'>${priceTotal}руб</p>
 				</div>
 			</div>
 		</div>
@@ -91,7 +110,7 @@ containerCart();
 function productInCart() {
 	let arrowLeft = document.querySelectorAll('.arrow_left_cart');
 	let arrowRight = document.querySelectorAll('.arrow_right_cart');
-	let divRemoveProduct = document.querySelectorAll('.div_remove_product');
+	let iconRemoveProduct = document.querySelectorAll('.icon_remove_product');
 	let productInCart = getLocalStorage();
 
 	arrowRight.forEach((el, i) => {
@@ -100,7 +119,7 @@ function productInCart() {
 				productInCart[i].count += 1;
 				productInCart[i].priceTotal = productInCart[i].priceProduct * productInCart[i].count;
 			}
-			localStorage.setItem('products', JSON.stringify(productInCart));
+			localStorage.setItem('productsCart', JSON.stringify(productInCart));
 			containerCart();
 		})
 	})
@@ -113,15 +132,15 @@ function productInCart() {
 			else {
 				productInCart.splice(i, 1);
 			}
-			localStorage.setItem('products', JSON.stringify(productInCart));
+			localStorage.setItem('productsCart', JSON.stringify(productInCart));
 			containerCart();
 		})
 	})
-	divRemoveProduct.forEach((el, i) => {
+	iconRemoveProduct.forEach((el, i) => {
 		el.addEventListener('click', () => {
 			productInCart.splice(i, 1);
 			
-			localStorage.setItem('products', JSON.stringify(productInCart));
+			localStorage.setItem('productsCart', JSON.stringify(productInCart));
 			containerCart();
 			
 		})

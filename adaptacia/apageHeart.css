@@ -1,0 +1,82 @@
+@media only screen and (max-width: 700px) { 
+	.header_exit_heart p, .img_heart p, .name_heart p, .skidka_heart p, .price_heart p {
+		font-size: 20px;
+	}
+	.header_exit_heart, .name_heart, .img_heart, .skidka_heart, .price_heart {
+		padding: 10px;
+	}
+	.header_exit_heart i {
+		font-size: 25px;
+	}
+	.div_remove_product_heart i {
+		font-size: 25px;
+	}
+	.div_name_product p, .div_skidka_product p, .div_total_product p {
+		font-size: 19px;
+	}
+}
+@media only screen and (max-width: 600px) { 
+	.header_exit_heart, .name_heart, .img_heart, .skidka_heart, .price_heart {
+		padding: 5px;
+	}
+	.header_exit_heart p, .img_heart p, .name_heart p, .skidka_heart p, .price_heart p {
+		font-size: 18px;
+		font-weight: 500;
+	}
+	.div_name_product p, .div_skidka_product p, .div_total_product p {
+		font-size: 16px;
+	}
+	.header_exit_heart i {
+		font-size: 22px;
+	}
+	.div_remove_product_heart i {
+		font-size: 22px;
+	}
+}
+@media only screen and (max-width: 480px) { 
+	.header_logo {
+		width: 70px;
+		height: 70px;
+	}
+	.navbar-toggler {
+		font-size: 1.3rem;
+	}
+	.empty_heart {
+		padding: 20px;
+	} 
+	.empty_heart_text {
+		font-size: 20px;
+		font-weight: 700;
+	}
+}
+@media only screen and (max-width: 420px) { 
+	.header_exit_heart i {
+		font-size: 20px;
+	}
+	.div_remove_product_heart i {
+		font-size: 18px;
+	}
+	.header_exit_heart, .name_heart, .img_heart, .skidka_heart, .price_heart {
+		padding: 2px;
+	}
+	.header_exit_heart p, .img_heart p, .name_heart p, .skidka_heart p, .price_heart p {
+		font-size: 16px;
+	}
+	.div_name_product p, .div_skidka_product p, .div_total_product p {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 370px) { 
+	.header_exit_heart p, .img_heart p, .name_heart p, .skidka_heart p, .price_heart p {
+		font-size: 14px;
+	}
+	.div_name_product p, .div_skidka_product p, .div_total_product p {
+		font-size: 11px;
+	}
+	.header_exit_heart i {
+		font-size: 16px;
+	}
+	.div_remove_product_heart i {
+		font-size: 15px;
+	}
+}

@@ -552,6 +552,7 @@ input:-webkit-autofill:active  {
 	border-radius: 50%;
 	position: absolute;
 	right: 24px;
+	top: 0px;
 	width: 85px;
 	height: 85px;
 	cursor: pointer;
@@ -583,9 +584,12 @@ input:-webkit-autofill:active  {
 	border-radius: 10px;
 	cursor: pointer;
 }
-.a_korzina {
+.a_korzina, .a_heart {
 	color: #000000;
+	text-decoration: none;
+	z-index: 100;
 }
+
 /*  row_1--END  */
 
 
@@ -795,21 +799,24 @@ input:-webkit-autofill:active  {
 	cursor: pointer;
 }
 .procent {
-	background-color: #D70000;
+	background-color: red;
 	padding: 1px 5px;
 	border-radius: 5px;
 	color: #ffffff;
 	margin: 0px 0px 0px 10px;
 	cursor: pointer;
 }
-.header_slider_akcia i {
+.icon_heart, .icon_heart_buy {
 	font-size: 30px;
 	margin: 0px;
 	color: #C4C4C4;
 	cursor: pointer;
 }
-.header_slider_akcia i:hover {
+.icon_heart_active {
+	font-size: 30px;
+	margin: 0px;
 	color: red;
+	cursor: pointer;
 }
 .articl_slider_akcia_img {
 	width: 100%;
@@ -878,14 +885,8 @@ input:-webkit-autofill:active  {
 	cursor: pointer;
 	font-weight: 700;
 }
-/* .div_btn_kupit {
-	background-color: #04B500;
-	color: #ffffff;
-	border-radius: 5px;
-	border: none;
-	padding: 5px 20px;
-} */
-.btn_footer_slider_akcia {
+
+.btn_footer_slider_akcia, .btn_footer_slider_buy {
 	background-color: #04B500;
 	color: #ffffff;
 	border-radius: 5px;

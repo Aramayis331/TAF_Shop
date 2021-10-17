@@ -1,0 +1,56 @@
+.header_exit_heart, .name_heart, .img_heart, .skidka_heart, .price_heart {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	height: 100%;
+}
+.header_exit_heart p, .img_heart p, .name_heart p, .skidka_heart p, .price_heart p {
+	margin: 0;
+	cursor: pointer;
+	color: #528FD5;
+	font-size: 22px;
+	font-weight: 700;
+}
+.header_exit_heart i {
+	font-size: 27px;
+	cursor: pointer;
+}
+.header_exit_heart a {
+	color: #528FD5;
+}
+.div_remove_product_heart, .div_img_product, .div_name_product, .div_skidka_product, .div_total_product {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.header_heart, .container_heart {
+	border-bottom: 1px solid #528FD5;
+}
+.div_img_product img {
+	width: 100%;
+}
+.div_remove_product_heart i {
+	font-size: 27px;
+	cursor: pointer;
+}
+.div_name_product p, .div_skidka_product p, .div_total_product p {
+	margin: 0;
+	cursor: pointer;
+	color: #528FD5;
+	font-size: 21px;
+	font-weight: 500;
+}
+.empty_heart {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+} 
+.empty_heart_text {
+	margin: 0;
+	color: #528FD5;
+	font-size: 30px;
+	font-weight: 700;
+}

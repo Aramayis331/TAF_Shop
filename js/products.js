@@ -1,13 +1,13 @@
-import {massivProductSliderAkcia, massivProductSliderBuy, getLocalStorage, setLocalStorage, 
-		classNameActive, textNameActive, textNameKupit} from './module/script.js';
+import {massivProductSliderAkcia, massivProductSliderBuy, getLocalStorage, getLocalSotrageHeart, 
+		classNameActive, textNameActive, textNameKupit, classNameActiveHeart} from './module/script.js';
 
 
-let htmlCatalogSliderAkcia = '';
-massivProductSliderAkcia.forEach((el) => {
-	let activClass = '';
-	let activText = '';
+
+let activClass = '';
+let activText = '';
+function activBuy(el) {
 	let activTrue = true;
-
+	
 	let objectProductsStore = getLocalStorage();
 	for(let k = 0; k < objectProductsStore.length; k++) {
 		if(el.id ===  objectProductsStore[k].id) {
@@ -20,7 +20,32 @@ massivProductSliderAkcia.forEach((el) => {
 		activClass = ' ';
 		activText = textNameKupit;
 	}
+}
+
+let activClassHeart = ' ';
+function activeHeart(el) {
+	let objectLocalStorajeHeart = getLocalSotrageHeart();
+	let activeTrueHeart = true;
 	
+	for(let l = 0; l < objectLocalStorajeHeart.length; l++) {
+		if(el.id === objectLocalStorajeHeart[l].id) {
+			activClassHeart = ' ' + classNameActiveHeart;
+			activeTrueHeart = false;
+		}
+	}
+	if(activeTrueHeart === true) {
+		activClassHeart = ' ';
+	}
+
+}
+
+let htmlCatalogSliderAkcia = '';
+massivProductSliderAkcia.forEach((el) => {
+
+	activBuy(el);
+	activeHeart(el);
+
+
 
 	htmlCatalogSliderAkcia += `
 	
@@ -31,7 +56,7 @@ massivProductSliderAkcia.forEach((el) => {
 						<p class="grn">${el.priceMinus} руб</p>
 						<p class="procent">${el.priceSkidka}</p> 
 					</div>
-						<i class="fas fa-heart"></i>
+						<div class="div_btn_heart"><i class="fas fa-heart icon_heart${activClassHeart}"></i></div>
 				</div>
 				<div class="articl_slider_akcia">
 					<img class="articl_slider_akcia_img" src="${el.img}" alt="no photo">
@@ -72,21 +97,26 @@ massivProductSliderAkcia.forEach((el) => {
 
 
 let htmlCatalogSliderBuy = '';
-massivProductSliderBuy.forEach(({img}) => {
-	
+massivProductSliderBuy.forEach((el) => {
+
+	activBuy(el);
+	activeHeart(el);
+
 	htmlCatalogSliderBuy += `
 	
 		<div class="sliders_buy">
 			<div class="slide_akcia">
 				<div class="header_slider_akcia">
 					<div class="cena_procent">
-						<p class="grn">-53 грн</p>
-						<p class="procent">-20%</p> 
+						<p class="grn">${el.priceMinus} руб</p>
+						<p class="procent">${el.priceSkidka}</p> 
 					</div>
-						<i class="fas fa-heart"></i>
+					<div class="div_btn_heart_buy">
+						<i class="fas fa-heart icon_heart_buy${activClassHeart}"></i>
+					</div>
 				</div>
 				<div class="articl_slider_akcia">
-					<img class="articl_slider_akcia_img" src="${img}" alt="no photo">
+				<img class="articl_slider_akcia_img" src="${el.img}" alt="no photo">
 					<div class="slider_akcia_te">
 						<p class="articl_p1">Есть в наличии</p>
 						<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
@@ -107,11 +137,11 @@ massivProductSliderBuy.forEach(({img}) => {
 				</div>
 				<div class="footer_slider_akcia">
 					<div class="cena_producta_div">
-						<p class="cena_product">243 UAH</p>
-						<p class="skidka_product">189.9 UAH</p>
+						<p class="cena_product">${el.price} руб</p>
+						<p class="skidka_product">${el.priceProduct} руб</p>
 					</div>
-					<div class="div_btn_kupit">
-						<button class="btn_footer_slider_akcia" type="submit">Купить</button>
+					<div class="div_btn_kupit_buy">
+						<button class="btn_footer_slider_buy${activClass}" type="submit">${activText}</button>
 					</div>
 				</div>
 			</div>

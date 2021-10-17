@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SHOP</title>
+	<title>TAF SHOP</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="adaptacia/aindex.css">
@@ -203,7 +203,7 @@
 				<div class="header_input">
 					<input type="text" placeholder="Поиск товара по каталогу">
 					<div class="icon_searc">
-						<a href="#"><i class="fas fa-search"></i></a>
+						<a href="index.html"><i class="fas fa-search"></i></a>
 					</div>
 				</div>
 					<div class="icon_div_sigin" id="icon_div_sigin" data-bs-toggle="modal" data-bs-target="#modalLogin">
@@ -233,24 +233,26 @@
 						<i class="fas fa-phone-alt"></i>
 						<p>Контакты</p>
 					</div>
-					<div class="row_1div3">
-						<i class="far fa-heart"></i>
-						<div class="like_count_div"><p id="number_like">0</p></div>
-					</div>
+					<a href="html/pageHeart.html" class="a_heart">
+						<div class="row_1div3">
+							<i class="far fa-heart"></i>
+							<div class="like_count_div"><p id="number_like">0</p></div>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
 		<div class="col-6">
 				<div class="row1_div2">
 					<div class="row1div2_div1"></div>
-					<div class="row1div2_div2">
-						<a href="html/korzina.html" class="a_korzina">
+					<a href="html/korzina.html" class="a_korzina">
+						<div class="row1div2_div2">
 							<i class="fas fa-shopping-basket"></i>
-						<div class="basket_count_div">
-							<p id="number_basket">0</p>
+							<div class="basket_count_div">
+								<p id="number_basket">0</p>
+							</div>
 						</div>
-						</a>
-					</div>
+					</a>
 			</div>
 		</div>
 	</div>
@@ -638,5 +640,6 @@
 	<script src="js/index.js"></script>
 	<script type="module" src="js/products.js"></script>
 	<script type="module" src="js/korzina.js"></script>
+	<script type="module" src="js/productsHeart.js"></script>
 </body>
 </html>
