@@ -2,13 +2,23 @@
 	background-color: #528FD5;
 	padding: 80px 0px;
 }
-.row13_div2_header, .row13_div1_header {
+.row13_div1_header, .row13_div2_header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.row13_div3_header {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.row13_div2_header_p, .row13_div1_header_p {
 	color: #ffffff;
 	cursor: pointer;
 	text-align: center;
 	font-weight: 700;
 }
-.row13_div3_header {
+.row13_div3_header_p {
 	color: #ffffff;
 	cursor: pointer;
 	font-weight: 700;

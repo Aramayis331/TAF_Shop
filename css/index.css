@@ -482,12 +482,18 @@ input:-webkit-autofill:active  {
 .row_1div1 p {
 	padding: 0px 5px;
 	font-size: 17px;
+	font-weight: 500;
+	color: #454545;
 }
 .row_1div1 i {
 	font-size: 20px;
+	color: #454545;
 }
 .row_1div2 p {
 	padding: 0px 5px;
+	color: #454545;
+	font-size: 17px;
+	font-weight: 500;
 }
 .row1_connectiondiv2i3 {
 	display: flex;
@@ -498,30 +504,36 @@ input:-webkit-autofill:active  {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #528FD5;
-	color: #ffffff;
-	font-size: 17px;
+	background-color: #FFE385;
 	border-radius: 10px;
 	padding: 8px 30px;
 	margin: 0px 45px;
 	cursor: pointer;
 }
+.contact_us_div {
+	width: 25px;
+	height: 25px;
+}
+.contact_us_div img {
+	width: 100%;
+}
 .row_1div3 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #528FD5;;
+	background-color: #FFE385;
 	border-radius: 10px;
 	padding: 6px 30px;
 	position: relative;
 	cursor: pointer;
 }
 .row_1div3 i {
-	color: #ffffff;
+	/* color: #FFE385; */
+	color: #454545;
 	font-size: 30px;
 }
 .like_count_div {
-	background-color: #FFE385;
+	background-color: #454545;
 	border-radius: 50%;
 	width: 17px;
 	height: 17px;
@@ -559,13 +571,19 @@ input:-webkit-autofill:active  {
 }
 .row1div2_div2 i {
 	font-size: 35px;
+	color: #454545;
+}
+#number_like {
+	font-weight: 500;
+	color: #ffffff;
 }
 #number_basket {
 	color: #ffffff;
 	margin: 0px;
+	font-weight: 500;
 }
 .basket_count_div {
-	background-color: #000000;
+	background-color: #454545;
 	border-radius: 50%;
 	width: 17px;
 	height: 17px;
@@ -579,7 +597,7 @@ input:-webkit-autofill:active  {
 }
 .row1div2_div1 {
 	position: absolute;
-	background-color: #528FD5;
+	background-color: #FFE385;
 	padding: 21px 70px;
 	border-radius: 10px;
 	cursor: pointer;

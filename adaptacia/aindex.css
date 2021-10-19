@@ -825,14 +825,17 @@
 		padding: 3px 8px;
 	}
 	.row_1div1 {
-		padding: 5px 35px;
+		padding: 5px 47px;
 	}
 	.row1div2_div2 {
 		width: 72px;
 		height: 72px;
 	}
 	.row1div2_div1 {
-		padding: 16px 65px;
+		padding: 16px 57px;
+	}
+	.row1div2_div2 {
+		right: 19.5px;
 	}
 	.basket_count_div {
 		width: 13px;
