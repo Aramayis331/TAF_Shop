@@ -1,5 +1,5 @@
 body {
-	background-color: #A9C7EA;
+	background-color: #A9C7EA !important;
 }
 
 
@@ -1195,114 +1195,7 @@ font-weight: 600;
 
 
 /*  row_13--START  */
-.row_13 {
-	background-color: #528FD5;
-	padding: 80px 0px;
-}
-.row13_div2_header, .row13_div1_header {
-	color: #ffffff;
-	cursor: pointer;
-	text-align: center;
-	font-weight: 700;
-}
-.row13_div3_header {
-	color: #ffffff;
-	cursor: pointer;
-	font-weight: 700;
-}
-.row13_div2_p {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.row13_div2_p_den {
-	margin: 0;
-	cursor: pointer;
-	font-weight: 500;
-}
-.row13_div2_p:hover {
-	color: #ffffff;
-	transition: 0.5s;
-}
-.row13_div2_p_chasi {
-	margin: 0;
-	font-weight: 500;
-	cursor: pointer;
-}
-.row13_div3_p p {
-	margin: 0;
-	font-weight: 500;
-	cursor: pointer;
-}
-.row13_div3_p p:hover {
-	color: #ffffff;
-	transition: 0.5s;
-}
-.row13_div3_lin {
-	border: 1px solid #000000;
-	margin-top: 20px;
-	width: 100%;
-	margin-bottom: 20px;
-	cursor: pointer;
-} 
-.row13_div3_lin:hover {
-	border: 1px solid #ffffff;
-	transition: 0.5s;
-}
-.row13_div3_iconi i {
-	font-size: 22px;
-	cursor: pointer;
-	padding: 5px 10px 5px 10px;
-	border-radius: 10px;
-}
-.row_13div1_p {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-}
-.row_13div1_p p {
-	margin: 0;
-	font-weight: 500;
-}
-.row_13div1_p p:hover {
-	color: #ffffff;
-	transition: 0.5s;
-}
-.row_13div1_p img {
-	cursor: pointer;
-}
-.row_13div1_p p {
-	cursor: pointer;
-	margin-left: 15px;
-}
-.row_13div_regurovka1 {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	margin: 0px 50px 0px 0px;
-}
-.row_13div_regurovka3 {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	margin: 0px 0px 0px 50px;
-}
-.icon_insta:hover {
-	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-	color: #ffffff;
-	transition: 0.3s;
-}
-.icon_fb:hover {
-	color: #ffffff;
-	background-color: #1877f2;
-	transition: 0.5s;
-}
-.icon_viber:hover {
-	background-color:  #795AFB;
-	color: #ffffff;
-	transition: 0.5s;
-	
-}
+
 .div_btn_onas  {
 	display: none;
 }
