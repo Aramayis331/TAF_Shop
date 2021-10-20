@@ -16,6 +16,7 @@
 	}
 	footer {
 		padding: 10px;
+		margin-bottom: 15px;
 	}
 	.footer_div1 p, .footer_div2 p, .footer_div3 p {
 		font-size: 12px;
@@ -71,6 +72,7 @@
 		border: 2px solid #528FD5;
 		padding: 3px;
 		border-radius: 15px;
+		cursor: pointer;
 	}
 	.footer_div2 {
 		margin: 5px 0px;
