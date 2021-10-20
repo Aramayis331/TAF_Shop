@@ -75,4 +75,8 @@
 	.footer_div2 {
 		margin: 5px 0px;
 	}
+	.footer_div1:hover, .footer_div2:hover, .footer_div3:hover {
+		background-color: #528FD5;
+		transition: 0.5s;
+	}
 }
