@@ -602,7 +602,7 @@ input:-webkit-autofill:active  {
 	border-radius: 10px;
 	cursor: pointer;
 }
-.a_korzina, .a_heart {
+.a_korzina, .a_heart, .a_contactUs {
 	color: #000000;
 	text-decoration: none;
 	z-index: 100;

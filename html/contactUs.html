@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/contactUs.css">
+	<link rel="stylesheet" href="../adaptacia/acontactUs.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../adaptacia/aindex.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<title>TAF SHOP</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar header">
+			<a href="../index.html">
+				<div class="header_logo">
+					<img src="../images/header_logo.webp" alt="no photo">
+				</div>
+			</a>
+		<button class="navbar-toggler div_icon_navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+			<div class="icon_navbar"><i class="fas fa-bars"></i></div>
+		</button>
+		<div class="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<div class="icon_user">
+					<i class="fas fa-user"></i>
+					<p class="icon_user_p" id="sigin_navbar">Ник Профила</p>
+				</div>
+			<div class="btn_close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+				<i class="fas fa-times"></i>
+			</div>
+			</div>
+			<div class="offcanvas-body">
+			<ul class="navbar-nav navbar_nav justify-content-end flex-grow-1 pe-3">
+				<li class="nav-item">
+					<div class="li1">
+						<img src="../images/menu_img1.webp" alt="no photo">
+						<a class="li1_a" href="#">Главная</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li2">
+						<img src="../images/menu_img2.webp" alt="no photo">
+						<a class="li2_a" href="#">Акции</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown dropdown_li">
+						<img src="../images/menu_img3.webp" alt="no photo">
+						<a class="fish_dropdown dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Каталог товаров
+						</a>
+					<ul class="dropdown-menu dropdown_menu" aria-labelledby="offcanvasNavbarDropdown">
+						<li><a class="dropdown_item" href="#">Слабосоленая риба и морепродукты</a></li>
+						<li><a class="dropdown_item" href="#">Рыба холодного копчения</a></li>
+						<li><a class="dropdown_item" href="#">Рыба горячего копчения</a></li>
+						<li><a class="dropdown_item" href="#">Вяленная рыба</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<div class="li3">
+						<img src="../images/menu_img4.webp" alt="no photo">
+						<a class="li3_a" href="#">Доставка и оплата</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li4">
+						<img src="../images/menu_img5.webp" alt="no photo">
+						<a class="li4_a" href="#">Отзывы</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li5">
+						<img src="../images/menu_img6.webp" alt="no photo">
+						<a class="li5_a" href="#">Частые вопросы?</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li6">
+						<img src="../images/menu_img7.webp" alt="no photo">
+						<a class="li6_a" href="#">График работы</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li7">
+						<img src="../images/menu_img8.webp" alt="no photo">
+						<a class="li7_a" href="#">Контакты</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<div class="li8">
+						<img src="../images/menu_img9.webp" alt="no photo">
+						<a class="li8_a" href="#">О нас</a>
+					</div>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--  row_1  -->
+	<div class="row">
+		<div class="col-12">
+			<div class="row_1_div">
+				<p>Связаться с нами</p>
+			</div>
+		</div>
+	</div>
+
+	<!--  row_2  -->
+	<div class="row row_2">
+		<div class="col-6 row_2_col-6">
+			<div class="row_2div1">
+				<form action="#" method="post">
+					<div class="div_input_name">
+						<div class="icon_input_name">
+							<i class="fas fa-user"></i>
+						</div>
+						<input class="contactUsname" name="contactUsname" type="text" placeholder="Имя">
+					</div>
+					<div class="div_input_email">
+						<div class="icon_input_email">
+							<i class="fas fa-at"></i>
+						</div>
+						<input class="contactUsemail" name="contactUsemail" type="email" placeholder="Почта">
+					</div>
+					<div class="div_input_phone">
+						<div class="icon_inpit_phone">
+							<i class="fas fa-phone-alt"></i>
+						</div>
+						<input class="contactUsphone" name="contactUsphone" type="phone" placeholder="Телефон">
+					</div>
+					<div class="div_texarea_message">
+						<textarea class="contactUsmessage" name="contactUsmessage" cols="30" rows="8" placeholder="Сообщение..."></textarea>
+					</div>
+					<div class="div_btn_submit">
+						<button class="submitContactUs" type="submit" name="submitContactUs">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="col-6 row_2_col-6">
+			<div class="row_2_div2">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81323.16329882095!2d30.409757079004507!3d50.434602435369946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cead786f7411%3A0x22f70678e2cdb3de!2z0YPQuy4g0JLQvtC70YvQvdGB0LrQsNGPLCAzNC8xLCDQmtC40LXQsiwg0KPQutGA0LDQuNC90LAsIDAyMDAw!5e0!3m2!1sru!2s!4v1634750450000!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="row row_footer">
+			<div class="col-4 footer_col-4">
+				<div class="footer_div1">
+					<i class="fas fa-phone-alt"></i>
+					<p class="footer_text">38 (067) 705 50 54</p>
+				</div>
+			</div>
+			<div class="col-4 footer_col-4">
+				<div class="footer_div2">
+					<i class="fas fa-at"></i>
+					<p class="footer_text">support@taf.kiev.ua</p>
+				</div>
+			</div>
+			<div class="col-4 footer_col-4">
+				<div class="footer_div3">
+					<i class="fas fa-map-marker-alt"></i>
+					<p class="footer_text">г. Киев, ул. Волынская 34/1</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -421,6 +421,10 @@
 	.header_input input::placeholder {
 		font-size: 13px;
 	}
+	.header_input {
+		width: 35%;
+		padding: 4px;
+	}
 	.navbar-toggler {
 		padding: 0.5rem 0.9rem;
 		font-size: 1.5rem;
@@ -735,7 +739,7 @@
 }
 @media only screen and (max-width: 575px) { 
 	.header_input {
-		width: 33%;
+		width: 37%;
 	}
 	.header_input input {
 		padding: 2px;
@@ -958,7 +962,7 @@
 		font-size: 15px;
 	}
 	.header_input {
-		width: 50%;
+		width: 40%;
 	}
 	.row_8div {
 		height: 95%;
@@ -982,6 +986,9 @@
 	}
 }
 @media only screen and (max-width: 380px) { 
+	.header_input {
+		width: 47%;
+	}
 	.slider_buy {
 		height: 360px;
 	}

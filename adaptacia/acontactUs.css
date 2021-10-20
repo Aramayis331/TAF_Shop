@@ -1,0 +1,55 @@
+@media only screen and (max-width: 750px) { 
+	.row_1_div p {
+		font-size: 22px;
+	}
+	.contactUsname::placeholder, .contactUsemail::placeholder, .contactUsphone::placeholder, .contactUsmessage::placeholder {
+		font-size: 13px;
+	}
+	.contactUsname, .contactUsemail, .contactUsphone, .contactUsmessage {
+		font-size: 13px;
+	}
+	.div_input_name i, .div_input_email i, .div_input_phone i {
+		font-size: 13px;
+	}
+	.submitContactUs {
+		font-size: 13px;
+	}
+	footer {
+		padding: 10px;
+	}
+	.footer_div1 p, .footer_div2 p, .footer_div3 p {
+		font-size: 12px;
+	}
+	.footer_div1 i, .footer_div2 i, .footer_div3 i {
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 585px) { 
+	.row_1_div {
+		padding: 10px;
+	}
+	
+	.row_2 {
+		flex-direction: column;
+	}
+	.row_2_col-6 {
+		width: 100%;
+	}
+	.contactUsmessage {
+		height: 80px;
+	}
+	.div_btn_submit {
+		padding: 10px 0px;
+	}
+	.row_footer {
+		flex-direction: column;
+	}
+	.footer_col-4 {
+		width: 100%;
+	}
+	.footer_div1, .footer_div2, .footer_div3 {
+		justify-content: center;
+	}
+
+
+}

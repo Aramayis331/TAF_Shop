@@ -1,0 +1,143 @@
+.row_1_div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.row_1_div p {
+	margin: 0;
+	color: #528FD5;
+	font-size: 25px;
+	font-weight: 500;
+	cursor: pointer;
+}
+.row_2div1 {
+	height: 100%;
+}
+form {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: normal;
+    height: 100%;
+}
+.div_input_name, .div_input_email, .div_input_phone {
+	border: 2px solid #528FD5;
+	padding: 5px;
+	margin-bottom: 10px;
+	border-radius: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.div_input_name:hover, .div_input_email:hover, .div_input_phone:hover, .div_texarea_message:hover, .submitContactUs:hover {
+	background-color: #528FD5;
+	transition: 0.5s;
+}
+.div_texarea_message {
+	border: 2px solid #528FD5;
+	padding: 5px;
+	border-radius: 15px;
+}
+.contactUsname:-webkit-autofill,
+.contactUsname:-webkit-autofill:hover,
+.contactUsname:-webkit-autofill:focus,
+.contactUsname:-webkit-autofill:active  {
+	border: none !important;
+	-webkit-text-fill-color: #000000 !important;
+	-webkit-box-shadow: 0 0 0px 1000px #A9C7EA inset !important;
+}
+.contactUsemail:-webkit-autofill,
+.contactUsemail:-webkit-autofill:hover,
+.contactUsemail:-webkit-autofill:focus,
+.contactUsemail:-webkit-autofill:active  {
+	border: none !important;
+	-webkit-text-fill-color: #000000 !important;
+	-webkit-box-shadow: 0 0 0px 1000px #A9C7EA inset !important;
+}
+.contactUsphone:-webkit-autofill,
+.contactUsphone:-webkit-autofill:hover,
+.contactUsphone:-webkit-autofill:focus,
+.contactUsphone:-webkit-autofill:active  {
+	border: none !important;
+	-webkit-text-fill-color: #000000 !important;
+	-webkit-box-shadow: 0 0 0px 1000px #A9C7EA inset !important;
+}
+.contactUsname, .contactUsemail, .contactUsphone {
+	border: none !important;
+	outline: none;
+	background: none;
+	color: #000000;
+	cursor: pointer;
+	width: 100%;
+}
+.icon_input_name, .icon_input_email, .icon_inpit_phone {
+	margin: 0px 5px;
+}
+.contactUsmessage {
+	border: none !important;
+	outline: none;
+	background: none;
+	color: #000000;
+	cursor: pointer;
+	width: 100%;
+	resize: none;
+}
+.contactUsname::placeholder, .contactUsemail::placeholder, .contactUsphone::placeholder, .contactUsmessage::placeholder {
+	color: #000000;
+}
+.div_btn_submit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding-top: 15px;
+}
+.submitContactUs {
+	background-color: transparent;
+	border-radius: 15px;
+	border: 2px solid #528FD5;
+	color: #000000;
+	padding: 2px 30px;
+}
+.row_2_div2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #528FD5;
+	border-radius: 15px;
+	height: 100%;
+}
+.row_2_div2 iframe {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+}
+footer {
+	margin-top: 15px;
+	border: 2px solid #528FD5;
+	border-radius: 15px;
+	padding: 15px;
+}
+.footer_div1 {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.footer_div2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer_div3 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.footer_div1 i, .footer_div2 i, .footer_div3 i {
+	padding-right: 5px;
+}
+.footer_text {
+	margin: 0;
+	cursor: pointer;
+}
