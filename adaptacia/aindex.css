@@ -825,7 +825,7 @@
 		padding: 3px 8px;
 	}
 	.row_1div1 {
-		padding: 5px 47px;
+		padding: 5px 48px;
 	}
 	.row1div2_div2 {
 		width: 72px;
@@ -856,8 +856,11 @@
 		font-size: 1.5rem;
 	}
 	.header_input input::placeholder {
-		font-size: 11px;
+		font-size: 8.5px;
 		font-weight: 500;
+	}
+	.header_input {
+		padding: 3px;
 	}
 	.header_logo {
 		width: 85px;
