@@ -28,18 +28,37 @@
 	.row_1_div {
 		padding: 10px;
 	}
-	
+	.row_1_div p {
+		font-size: 20px;
+	}
 	.row_2 {
 		flex-direction: column;
 	}
 	.row_2_col-6 {
 		width: 100%;
 	}
+	.div_input_name, .div_input_email, .div_input_phone {
+		padding: 3px;
+		margin-bottom: 5px;
+	}
+	.div_texarea_message {
+		padding: 3px;
+	}
+	.div_btn_submit {
+		padding: 8px 0px;
+	}
+	.row_2_div2 {
+		height: 250px;
+	}
 	.contactUsmessage {
 		height: 80px;
 	}
 	.div_btn_submit {
 		padding: 10px 0px;
+	}
+	footer {
+		padding: 0px;
+		border: none;
 	}
 	.row_footer {
 		flex-direction: column;
@@ -49,7 +68,11 @@
 	}
 	.footer_div1, .footer_div2, .footer_div3 {
 		justify-content: center;
+		border: 2px solid #528FD5;
+		padding: 3px;
+		border-radius: 15px;
 	}
-
-
+	.footer_div2 {
+		margin: 5px 0px;
+	}
 }
