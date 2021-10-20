@@ -72,7 +72,6 @@
 		border: 2px solid #528FD5;
 		padding: 3px;
 		border-radius: 15px;
-		cursor: pointer;
 	}
 	.footer_div2 {
 		margin: 5px 0px;
@@ -80,5 +79,8 @@
 	.footer_div1:hover, .footer_div2:hover, .footer_div3:hover {
 		background-color: #528FD5;
 		transition: 0.5s;
+	}
+	.footer_col-4 {
+		cursor: pointer;
 	}
 }
