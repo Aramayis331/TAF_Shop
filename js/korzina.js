@@ -102,6 +102,7 @@ let containerCart = () => {
 	}
 	}
 	productInCart();
+	funcSubtotal();
 }
 containerCart();
 
@@ -119,9 +120,11 @@ function productInCart() {
 				productInCart[i].count += 1;
 				productInCart[i].priceTotal = productInCart[i].priceProduct * productInCart[i].count;
 			}
+			
 			localStorage.setItem('productsCart', JSON.stringify(productInCart));
 			containerCart();
 		})
+		funcSubtotal()
 	})
 	arrowLeft.forEach((el, i) => {
 		el.addEventListener('click', () => {
@@ -132,9 +135,11 @@ function productInCart() {
 			else {
 				productInCart.splice(i, 1);
 			}
+			
 			localStorage.setItem('productsCart', JSON.stringify(productInCart));
 			containerCart();
 		})
+		funcSubtotal()
 	})
 	iconRemoveProduct.forEach((el, i) => {
 		el.addEventListener('click', () => {
@@ -142,10 +147,26 @@ function productInCart() {
 			
 			localStorage.setItem('productsCart', JSON.stringify(productInCart));
 			containerCart();
-			
 		})
+		funcSubtotal()
 	})
-	
 }
-
 productInCart();
+
+function funcSubtotal() {
+	let productListTotal = getLocalStorage();
+	let subtotalText = document.querySelector('.subtotal');
+	let divsubtotal = document.querySelector('.divsubtotal');
+	let subtotal = 0;
+	
+	productListTotal.forEach(el => {
+		subtotal = subtotal + parseInt(el.priceTotal);
+	})
+	if(subtotalText) {
+		subtotalText.innerHTML = subtotal + 'руб';
+	}
+	if(productListTotal.length === 0 && divsubtotal) {
+		divsubtotal.style.display = 'none';
+	}
+}
+funcSubtotal()

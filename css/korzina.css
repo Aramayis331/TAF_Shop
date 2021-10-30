@@ -121,4 +121,26 @@
 	color: #528FD5;
 	font-size: 30px;
 	font-weight: 700;
+	cursor: pointer;
+}
+.divsubtotal {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 25px 25px;
+}
+.textsubtotal {
+	margin: 0px;
+	cursor: pointer;
+	color: #528FD5;
+	font-size: 22px;
+	font-weight: 700;
+}
+.subtotal {
+	padding: 0px 0px 0px 10px;
+	margin: 0px;
+	cursor: pointer;
+	color: #528FD5;
+	font-size: 22px;
+	font-weight: 700;
 }

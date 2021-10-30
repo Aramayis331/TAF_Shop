@@ -15,6 +15,17 @@
 	.name_product_korzina, .price_product_korzina, .count_product, .total_product {
 		font-size: 19px;
 	}
+	.textsubtotal {
+		font-size: 19px;
+		font-weight: 700;
+	}
+	.subtotal {
+		font-size: 19px;
+		font-weight: 700;
+	}
+	.divsubtotal {
+		margin: 10px 5px;
+	}
 }
 @media only screen and (max-width: 650px) {  
 	.header_products p, .header_price p, .header_count p, .header_total p {
@@ -37,6 +48,15 @@
 	.header_exit_cart i {
 		font-size: 20px;
 	}
+	.textsubtotal {
+		font-size: 18px;
+	}
+	.subtotal {
+		font-size: 18px;
+	}
+	.divsubtotal {
+		margin: 10px 0px;
+	}
 }
 @media only screen and (max-width: 548px) { 
 	.header_products p, .header_price p, .header_count p, .header_total p {
@@ -57,6 +77,15 @@
 	.empty_cart_text {
 			font-size: 25px;
 	}
+	.textsubtotal {
+		font-size: 16px;
+	}
+	.subtotal {
+		font-size: 16px;
+	}
+	.divsubtotal {
+		margin: 10px 5px;
+	}
 }
 @media only screen and (max-width: 481px) { 
 	.header_products p, .header_price p, .header_count p, .header_total p {
@@ -64,6 +93,15 @@
 	}
 	.name_product_korzina, .price_product_korzina, .count_product, .total_product {
 		font-size: 13px;
+	}
+	.textsubtotal {
+		font-size: 12px;
+	}
+	.subtotal {
+		font-size: 12px;
+	}
+	.divsubtotal {
+		margin: 10px 3px;
 	}
 	.div_remove_product i {
 		font-size: 12px;
@@ -94,11 +132,24 @@
 }
 @media only screen and (max-width: 380px) { 
 	.header_products p, .header_price p, .header_count p, .header_total p {
-		font-size: 11px;
+		font-size: 9px;
+		font-weight: 700;
 	}
 	.name_product_korzina, .price_product_korzina, .count_product, .total_product {
-		font-size: 11px;
+		font-size: 9px;
 		padding: 2px;
+		font-weight: 700;
+	}
+	.textsubtotal {
+		font-size: 10px;
+		font-weight: 500;
+	}
+	.subtotal {
+		font-size: 10px;
+		font-weight: 500;
+	}
+	.divsubtotal {
+		margin: 10px 0px;
 	}
 	.div_products_img_korzina {
 		max-width: 50px;

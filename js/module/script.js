@@ -212,7 +212,6 @@ function ocenki() {
 	})
 }
 
-
 export  { massivProductSliderAkcia, massivProductSliderBuy,
 		getLocalStorage, setLocalStorage, classNameActive, textNameActive, 
 		textNameKupit, classNameActiveHeart, getLocalSotrageHeart, ocenki};

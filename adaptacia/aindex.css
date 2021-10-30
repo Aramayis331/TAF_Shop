@@ -743,6 +743,15 @@
 	.icon_div_sigin {
 		padding: 5px 15px;
 	}
+	.icon_div_sigin_nik {
+		padding: 5px 15px;
+	}
+	.icon_div_sigin_nik p {
+		font-size: 15px;
+	}
+	.icon_div_sigin_nik i {
+		font-size: 18px;
+	}
 	.header_input {
 		width: 37%;
 	}
@@ -981,18 +990,23 @@
 		font-size: 16px;
 		margin-right: 5px;
 	}
-}
-@media only screen and (max-width: 450px) { 
-	.icon_div_sigin_nik p {
-		font-size: 15px;
-		font-weight: 500;
+	.icon_div_sigin_nik {
+		padding: 4px 15px;
 	}
 	.icon_div_sigin_nik i {
-		font-size: 17px;
-		margin-right: 5px;
+		font-size: 16px;
+	}
+	.icon_div_sigin_nik p {
+		font-size: 14px;
 	}
 }
 @media only screen and (max-width: 380px) { 
+	.icon_div_sigin_nik i {
+		font-size: 15px;
+	}
+	.icon_div_sigin_nik p {
+		font-size: 13px;
+	}
 	.row13_div2_header, .row13_div1_header, .row13_div3_header {
 		font-size: 15px;
 	}
@@ -1137,12 +1151,6 @@
 	.inputs_div_reg {
 		margin: 0px 0px 20px 0px;
 	}
-	.icon_div_sigin_nik p {
-		font-size: 14px;
-	}
-	.icon_div_sigin_nik i {
-		font-size: 15px;
-	}
 }
 @media only screen and (max-width: 320px) { 
 	.slide_akcia {
@@ -1154,6 +1162,10 @@
 	.row_6div1 {
 		margin: -5px 0px 20px 0px;
 	}
-
-
+	.icon_div_sigin_nik i {
+		font-size: 12px;
+	}
+	.icon_div_sigin_nik p {
+		font-size: 13px;
+	}
 }
