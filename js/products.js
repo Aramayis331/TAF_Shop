@@ -1,5 +1,5 @@
 import {massivProductSliderAkcia, massivProductSliderBuy, getLocalStorage, getLocalSotrageHeart, 
-		classNameActive, textNameActive, textNameKupit, classNameActiveHeart} from './module/script.js';
+		classNameActive, textNameActive, textNameKupit, classNameActiveHeart, ocenki} from './module/script.js';
 
 
 
@@ -53,25 +53,31 @@ massivProductSliderAkcia.forEach((el) => {
 			<div class="slide_akcia">
 				<div class="header_slider_akcia">
 					<div class="cena_procent">
-						<p class="grn">${el.priceMinus} руб</p>
-						<p class="procent">${el.priceSkidka}</p> 
+						<div class='div_grn'>
+							<p class="grn">${el.priceMinus} руб</p>
+						</div>
+						<div class='div_procent'>
+							<p class='procent'>${el.priceSkidka}</p> 	
+						</div>
 					</div>
 						<div class="div_btn_heart"><i class="fas fa-heart icon_heart${activClassHeart}"></i></div>
 				</div>
 				<div class="articl_slider_akcia">
 					<img class="articl_slider_akcia_img" src="${el.img}" alt="no photo">
 					<div class="slider_akcia_te">
-						<p class="articl_p1">Есть в наличии</p>
+						<div class='div_articl_p1'>
+							<p class="articl_p1">Есть в наличии</p>
+						</div>
 						<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
 					</div>
 				</div>
 				<div class="ocenka_slider_akcia"> 
-					<div class="ocenki">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
+					<div class="ocenki" data-total-value="0">
+						<i class="fas fa-star icon_ocenki" data-item-value="5"></i>
+						<i class="fas fa-star icon_ocenki" data-item-value="4"></i>
+						<i class="fas fa-star icon_ocenki" data-item-value="3"></i>
+						<i class="fas fa-star icon_ocenki" data-item-value="2"></i>
+						<i class="fas fa-star icon_ocenki" data-item-value="1"></i>
 					</div>
 					<div class="comment_slider_akcia">
 						<i class="far fa-comment-dots"></i>
@@ -108,8 +114,12 @@ massivProductSliderBuy.forEach((el) => {
 			<div class="slide_akcia">
 				<div class="header_slider_akcia">
 					<div class="cena_procent">
-						<p class="grn">${el.priceMinus} руб</p>
-						<p class="procent">${el.priceSkidka}</p> 
+						<div class='div_grn'>
+							<p class='grn'>${el.priceMinus} руб</p>
+						</div>
+						<div class='div_procent'>
+							<p class="procent">${el.priceSkidka}</p> 
+						</div>	
 					</div>
 					<div class="div_btn_heart_buy">
 						<i class="fas fa-heart icon_heart_buy${activClassHeart}"></i>
@@ -118,17 +128,19 @@ massivProductSliderBuy.forEach((el) => {
 				<div class="articl_slider_akcia">
 				<img class="articl_slider_akcia_img" src="${el.img}" alt="no photo">
 					<div class="slider_akcia_te">
-						<p class="articl_p1">Есть в наличии</p>
+						<div class='div_articl_p1'>
+							<p class="articl_p1">Есть в наличии</p>
+						</div>
 						<p class="articl_p2">Мідії мариновані в олії з лимоном</p>
 					</div>
 				</div>
 				<div class="ocenka_slider_akcia"> 
-					<div class="ocenki">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
+					<div class="ocenki" data-total-value="0">
+						<i class="fas fa-star icon_ocenki" data-item-value="5"></i>
+						<i class="fas fa-star icon_ocenki" data-item-value="4"></i>
+						<i class="fas fa-star icon_ocenki" data-item-value="3"></i>
+						<i class="fas fa-star icon_ocenki" data-item-value="2"></i>
+						<i class="fas fa-star icon_ocenki" data-item-value="1"></i>
 					</div>
 					<div class="comment_slider_akcia">
 						<i class="far fa-comment-dots"></i>
@@ -236,3 +248,6 @@ $('.slider_buy').slick({
 	}
 	]
 });
+
+
+ocenki();

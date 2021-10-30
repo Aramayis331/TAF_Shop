@@ -254,13 +254,8 @@ input:-webkit-autofill:active  {
     padding: 0.6rem 1rem;
     font-size: 1.6rem;
 }
-.header {
-	background-color: #528FD5;
-	--bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x) / -2);
-    margin-left: calc(var(--bs-gutter-x) / -2);
+.div_header {
+	background-color: #528FD5; 
 }
 .header_logo {
 	border-radius: 50%;
@@ -415,7 +410,7 @@ input:-webkit-autofill:active  {
 	align-items: center;
 	font-size: 17px;
 	border-radius: 10px;
-	padding: 6px 15px;
+	padding: 8px 15px;
 	background-color: #528FD5;
 	transition: 1s;
 	color: #ffffff;
@@ -809,20 +804,25 @@ input:-webkit-autofill:active  {
 	justify-content: center;
 	align-items: center;
 }
-.grn {
+.div_grn {
 	background-color: #FBCF3A;
 	border-radius: 5px;
-	margin: 0px;
 	padding: 1px 5px;
 	cursor: pointer;
 }
-.procent {
+.grn {
+	margin: 0px;
+}
+.div_procent {
 	background-color: red;
 	padding: 1px 5px;
 	border-radius: 5px;
-	color: #ffffff;
 	margin: 0px 0px 0px 10px;
 	cursor: pointer;
+}
+.procent {
+	color: #ffffff;
+	margin: 0px;
 }
 .icon_heart, .icon_heart_buy {
 	font-size: 30px;
@@ -839,15 +839,18 @@ input:-webkit-autofill:active  {
 .articl_slider_akcia_img {
 	width: 100%;
 }
-.articl_p1 {
-	color: #ffffff;
-	padding: 0px 15px;
+.div_articl_p1 {
 	background-color: #04B500;
 	border-radius: 10px;
 	margin-bottom: 5px;
+	padding: 0px 15px;
+	display: inline-block;
+}
+.articl_p1 {
+	color: #ffffff;
 	font-weight: 700;
 	cursor: pointer;
-	display: inline-block;
+	margin: 0px;
 }
 .articl_p2 {
 	text-align: left;
@@ -878,13 +881,30 @@ input:-webkit-autofill:active  {
 	margin-right: 7px;
 	cursor: pointer;
 }
-.ocenki i {
+.ocenki {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+}
+/*  STAR RATE  */
+.icon_ocenki {
 	color: #C4C4C4;
-}
-.ocenki i:hover {
-	color: #FBCF3A;
 	cursor: pointer;
+	margin: 1px;
+	transition: 0.5s;
 }
+.icon_ocenki:hover, .icon_ocenki:hover ~ .icon_ocenki {
+	color: #FBCF3A;
+}
+.ocenki[data-total-value='1'] .icon_ocenki:nth-child(n + 5),
+.ocenki[data-total-value='2'] .icon_ocenki:nth-child(n + 4),
+.ocenki[data-total-value='3'] .icon_ocenki:nth-child(n + 3),
+.ocenki[data-total-value='4'] .icon_ocenki:nth-child(n + 2),
+.ocenki[data-total-value='5'] .icon_ocenki:nth-child(n + 1) {
+	color: #FBCF3A;
+}
+
 .footer_slider_akcia {
 	display: flex;
 	justify-content: space-between;
@@ -1216,6 +1236,10 @@ font-weight: 600;
 
 .div_btn_onas  {
 	display: none;
+	background-color: #528FD5;
+	border-radius: 5px;
+	padding: 1px 10px;
+	cursor: pointer;
 }
 /*  row_13--END  */
 

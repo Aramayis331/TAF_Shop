@@ -32,6 +32,7 @@
 	margin: 0;
 	cursor: pointer;
 	font-weight: 500;
+	font-size: 15px;
 }
 .row13_div2_p:hover {
 	color: #ffffff;
@@ -41,11 +42,13 @@
 	margin: 0;
 	font-weight: 500;
 	cursor: pointer;
+	font-size: 15px;
 }
 .row13_div3_p p {
 	margin: 0;
 	font-weight: 500;
 	cursor: pointer;
+	font-size: 15px;
 }
 .row13_div3_p p:hover {
 	color: #ffffff;
@@ -73,10 +76,6 @@
 	justify-content: flex-start;
 	align-items: center;
 }
-.row_13div1_p p {
-	margin: 0;
-	font-weight: 500;
-}
 .row_13div1_p p:hover {
 	color: #ffffff;
 	transition: 0.5s;
@@ -92,6 +91,9 @@
 .row_13div1_p p {
 	cursor: pointer;
 	margin-left: 15px;
+	margin: 0;
+	font-weight: 500;
+	font-size: 15px;
 }
 .row_13div_regurovka1 {
 	display: flex;
@@ -104,6 +106,9 @@
 	justify-content: flex-start;
 	align-items: center;
 	margin: 0px 0px 0px 50px;
+}
+.icon_fb {
+	padding: 5px 12px 5px 12px !important;
 }
 .icon_insta:hover {
 	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);

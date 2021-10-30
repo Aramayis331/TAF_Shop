@@ -1,3 +1,5 @@
+import {ocenki} from './module/script.js'
+
 // SLIDER //
 
 let counter = 1;
@@ -86,7 +88,7 @@ let password_povtor_input_reg = document.getElementById('password_povtor_input_r
 
 
 registracia_btn.addEventListener('click', function() {
-	register = {
+	let register = {
 		'fullName' : full_name_input_reg.value,
 		'nik' : nik_input_reg.value,
 		'login' : login_input_reg.value,
@@ -159,3 +161,5 @@ let myModal2 = new bootstrap.Modal(document.getElementById('modalRegistr'), {
 	keyboard: false,
 	backdrop: 'static'
 })
+
+ocenki();

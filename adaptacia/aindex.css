@@ -105,7 +105,7 @@
 		height: 350px;
 	}
 	.slide img {
-		height: 350px;
+		height: 100%;
 	}
 	.navigation_manual {
 		margin-top: 315px;
@@ -137,10 +137,8 @@
 		display: inline-block;
 	}
 	.onas_btn {
-		background-color: #528FD5;
 		color: #FFFFFF;
-		border-radius: 5px;
-		padding: 1px 10px;
+		font-size: 15px;
 	}
 }
 @media only screen and (max-width: 872px) { 
@@ -175,6 +173,7 @@
 	.row_12div2_p {
 		font-weight: 600;
 		font-size: 15px;
+		display: inline;
 	}
 	.text1_p2 {
 		font-size: 14px;
@@ -223,7 +222,7 @@
 		top: -88px !important;
 	}
 	.row_7div1 {
-		margin: -10px 0px 10px 0px;
+		margin: 5px 0px 10px 0px;
 	}
 	.slide_akcia {
 		min-width: 49%;
@@ -288,7 +287,7 @@
 		height: 350px;
 	}
 	.slide img {
-		height: 350px;
+		height: 100%;
 	}
 	.navigation_manual {
 		margin-top: 315px;
@@ -550,7 +549,7 @@
 		height: 250px;
 	}
 	.slide img {
-		height: 250px;
+		height: 100%;
 	}
 	.navigation_auto {
 		margin-top: 220px;
@@ -571,7 +570,7 @@
 		font-size: 27px;
 	}
 	.row_7div1 {
-		margin: -20px 0px 10px 0px;
+		margin: 5px 0px 10px 0px;
 	}
 	.row_8_col {
 		width: 100%;
@@ -625,7 +624,7 @@
 	}
 	.row_10div img {
 		width: 100%;
-		height: 320px;
+		height: 100%;
 		border-radius: 35px;
 	}
 	.row_10div_btn {
@@ -736,14 +735,20 @@
 	.header_input i {
 		font-size: 14px;
 	}
+	.row13_div2_header, .row13_div1_header, .row13_div3_header {
+		font-size: 16px;
+	}
 }
 @media only screen and (max-width: 575px) { 
+	.icon_div_sigin {
+		padding: 5px 15px;
+	}
 	.header_input {
 		width: 37%;
 	}
 	.header_input input {
 		padding: 2px;
-		font-size: 14px;
+		font-size: 11px;
 	}
 	.header_input input::placeholder {
 		font-size: 12.5px;
@@ -871,7 +876,7 @@
 		height: 85px;
 	}
 	.slide img {
-		height: 200px;
+		height: 100%;
 	}
 	.slides {
 		height: 200px;
@@ -881,9 +886,11 @@
 	}
 	.navigation_auto {
 		margin-top: 175px;
+		width: 90%;
 	}
 	.navigation_manual {
 		margin-top: 175px;
+		width: 90%;
 	}
 	.navigation_auto div {
 		padding: 4px;
@@ -986,6 +993,9 @@
 	}
 }
 @media only screen and (max-width: 380px) { 
+	.row13_div2_header, .row13_div1_header, .row13_div3_header {
+		font-size: 15px;
+	}
 	.header_input {
 		width: 47%;
 	}
@@ -1082,7 +1092,7 @@
 		font-size: 17px;
 	}
 	.slide img {
-		height: 160px;
+		height: 100%;
 	}
 	.slides {
 		height: 160px;
@@ -1106,7 +1116,7 @@
 		font-size: 15px;
 	}
 	.header_input i {
-		font-size: 13px;
+		font-size: 12px;
 	}
 	.icon_div_sigin i {
 		font-size: 15px;
@@ -1133,4 +1143,17 @@
 	.icon_div_sigin_nik i {
 		font-size: 15px;
 	}
+}
+@media only screen and (max-width: 320px) { 
+	.slide_akcia {
+		margin: 0 5px 0 5px;
+	}
+	.row_7div1 {
+		margin: -10px 0px 15px 0px;
+	}
+	.row_6div1 {
+		margin: -5px 0px 20px 0px;
+	}
+
+
 }

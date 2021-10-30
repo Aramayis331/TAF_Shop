@@ -201,6 +201,18 @@ function getLocalSotrageHeart() {
 let classNameActiveHeart = 'icon_heart_active';
 
 
+function ocenki() {
+	let icon_ocenki = document.querySelectorAll('.icon_ocenki');
+
+	icon_ocenki.forEach((el) => {
+		el.addEventListener('click', () => {
+			const { itemValue } = el.dataset;
+			el.parentNode.dataset.totalValue = itemValue;
+		})
+	})
+}
+
+
 export  { massivProductSliderAkcia, massivProductSliderBuy,
 		getLocalStorage, setLocalStorage, classNameActive, textNameActive, 
-		textNameKupit, classNameActiveHeart, getLocalSotrageHeart};
+		textNameKupit, classNameActiveHeart, getLocalSotrageHeart, ocenki};
